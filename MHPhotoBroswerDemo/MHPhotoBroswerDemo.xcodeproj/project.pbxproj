@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09A8428D1EE50741004615FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A8428C1EE50741004615FD /* main.m */; };
+		09A842901EE50741004615FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A8428F1EE50741004615FD /* AppDelegate.m */; };
+		09A842931EE50741004615FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A842921EE50741004615FD /* ViewController.m */; };
+		09A842961EE50741004615FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A842941EE50741004615FD /* Main.storyboard */; };
+		09A842981EE50741004615FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A842971EE50741004615FD /* Assets.xcassets */; };
+		09A8429B1EE50741004615FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A842991EE50741004615FD /* LaunchScreen.storyboard */; };
+		09A842A61EE50741004615FD /* MHPhotoBroswerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A842A51EE50741004615FD /* MHPhotoBroswerDemoTests.m */; };
+		09A842B11EE50741004615FD /* MHPhotoBroswerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A842B01EE50741004615FD /* MHPhotoBroswerDemoUITests.m */; };
+		09DDA7681EE5B076004FED65 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA75F1EE5B076004FED65 /* 1.png */; };
+		09DDA7691EE5B076004FED65 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA7601EE5B076004FED65 /* 2.png */; };
+		09DDA76A1EE5B076004FED65 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA7611EE5B076004FED65 /* 3.png */; };
+		09DDA76B1EE5B076004FED65 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA7621EE5B076004FED65 /* 4.png */; };
+		09DDA76C1EE5B076004FED65 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA7631EE5B076004FED65 /* 5.png */; };
+		09DDA76D1EE5B076004FED65 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA7641EE5B076004FED65 /* 6.png */; };
+		09DDA76E1EE5B076004FED65 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA7651EE5B076004FED65 /* 7.png */; };
+		09DDA76F1EE5B076004FED65 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA7661EE5B076004FED65 /* 8.png */; };
+		09DDA7701EE5B076004FED65 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA7671EE5B076004FED65 /* 9.png */; };
+		09DDA7731EE5B0BB004FED65 /* PhotoCotentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DDA7721EE5B0BB004FED65 /* PhotoCotentView.m */; };
+		95780CABA6B241899137939C /* Pods_MHPhotoBroswerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37FAC4F1F78E3D7EC940F857 /* Pods_MHPhotoBroswerDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09A842A21EE50741004615FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09A842801EE50741004615FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09A842871EE50741004615FD;
+			remoteInfo = MHPhotoBroswerDemo;
+		};
+		09A842AD1EE50741004615FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09A842801EE50741004615FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09A842871EE50741004615FD;
+			remoteInfo = MHPhotoBroswerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09A842881EE50741004615FD /* MHPhotoBroswerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHPhotoBroswerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09A8428C1EE50741004615FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09A8428E1EE50741004615FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		09A8428F1EE50741004615FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		09A842911EE50741004615FD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		09A842921EE50741004615FD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		09A842951EE50741004615FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09A842971EE50741004615FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09A8429A1EE50741004615FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09A8429C1EE50741004615FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09A842A11EE50741004615FD /* MHPhotoBroswerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHPhotoBroswerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09A842A51EE50741004615FD /* MHPhotoBroswerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHPhotoBroswerDemoTests.m; sourceTree = "<group>"; };
+		09A842A71EE50741004615FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09A842AC1EE50741004615FD /* MHPhotoBroswerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHPhotoBroswerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09A842B01EE50741004615FD /* MHPhotoBroswerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHPhotoBroswerDemoUITests.m; sourceTree = "<group>"; };
+		09A842B21EE50741004615FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09DDA75F1EE5B076004FED65 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		09DDA7601EE5B076004FED65 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		09DDA7611EE5B076004FED65 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		09DDA7621EE5B076004FED65 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		09DDA7631EE5B076004FED65 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		09DDA7641EE5B076004FED65 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		09DDA7651EE5B076004FED65 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		09DDA7661EE5B076004FED65 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		09DDA7671EE5B076004FED65 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		09DDA7711EE5B0BB004FED65 /* PhotoCotentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCotentView.h; sourceTree = "<group>"; };
+		09DDA7721EE5B0BB004FED65 /* PhotoCotentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCotentView.m; sourceTree = "<group>"; };
+		37FAC4F1F78E3D7EC940F857 /* Pods_MHPhotoBroswerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHPhotoBroswerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		617782B0EBCF39A55D2EDA54 /* Pods-MHPhotoBroswerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHPhotoBroswerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHPhotoBroswerDemo/Pods-MHPhotoBroswerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		743E7B77D27703DEEA948C9F /* Pods-MHPhotoBroswerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHPhotoBroswerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHPhotoBroswerDemo/Pods-MHPhotoBroswerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09A842851EE50741004615FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95780CABA6B241899137939C /* Pods_MHPhotoBroswerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09A8429E1EE50741004615FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09A842A91EE50741004615FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02CE96928CC593D3F82BF783 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37FAC4F1F78E3D7EC940F857 /* Pods_MHPhotoBroswerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09A8427F1EE50741004615FD = {
+			isa = PBXGroup;
+			children = (
+				09A8428A1EE50741004615FD /* MHPhotoBroswerDemo */,
+				09A842A41EE50741004615FD /* MHPhotoBroswerDemoTests */,
+				09A842AF1EE50741004615FD /* MHPhotoBroswerDemoUITests */,
+				09A842891EE50741004615FD /* Products */,
+				8A2A94FD3B4562287CE06BBE /* Pods */,
+				02CE96928CC593D3F82BF783 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		09A842891EE50741004615FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09A842881EE50741004615FD /* MHPhotoBroswerDemo.app */,
+				09A842A11EE50741004615FD /* MHPhotoBroswerDemoTests.xctest */,
+				09A842AC1EE50741004615FD /* MHPhotoBroswerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09A8428A1EE50741004615FD /* MHPhotoBroswerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				09DDA75E1EE5B062004FED65 /* resource */,
+				09A8428E1EE50741004615FD /* AppDelegate.h */,
+				09A8428F1EE50741004615FD /* AppDelegate.m */,
+				09A842911EE50741004615FD /* ViewController.h */,
+				09A842921EE50741004615FD /* ViewController.m */,
+				09DDA7711EE5B0BB004FED65 /* PhotoCotentView.h */,
+				09DDA7721EE5B0BB004FED65 /* PhotoCotentView.m */,
+				09A842941EE50741004615FD /* Main.storyboard */,
+				09A842971EE50741004615FD /* Assets.xcassets */,
+				09A842991EE50741004615FD /* LaunchScreen.storyboard */,
+				09A8429C1EE50741004615FD /* Info.plist */,
+				09A8428B1EE50741004615FD /* Supporting Files */,
+			);
+			path = MHPhotoBroswerDemo;
+			sourceTree = "<group>";
+		};
+		09A8428B1EE50741004615FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09A8428C1EE50741004615FD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09A842A41EE50741004615FD /* MHPhotoBroswerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				09A842A51EE50741004615FD /* MHPhotoBroswerDemoTests.m */,
+				09A842A71EE50741004615FD /* Info.plist */,
+			);
+			path = MHPhotoBroswerDemoTests;
+			sourceTree = "<group>";
+		};
+		09A842AF1EE50741004615FD /* MHPhotoBroswerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				09A842B01EE50741004615FD /* MHPhotoBroswerDemoUITests.m */,
+				09A842B21EE50741004615FD /* Info.plist */,
+			);
+			path = MHPhotoBroswerDemoUITests;
+			sourceTree = "<group>";
+		};
+		09DDA75E1EE5B062004FED65 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				09DDA75F1EE5B076004FED65 /* 1.png */,
+				09DDA7601EE5B076004FED65 /* 2.png */,
+				09DDA7611EE5B076004FED65 /* 3.png */,
+				09DDA7621EE5B076004FED65 /* 4.png */,
+				09DDA7631EE5B076004FED65 /* 5.png */,
+				09DDA7641EE5B076004FED65 /* 6.png */,
+				09DDA7651EE5B076004FED65 /* 7.png */,
+				09DDA7661EE5B076004FED65 /* 8.png */,
+				09DDA7671EE5B076004FED65 /* 9.png */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		8A2A94FD3B4562287CE06BBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				743E7B77D27703DEEA948C9F /* Pods-MHPhotoBroswerDemo.debug.xcconfig */,
+				617782B0EBCF39A55D2EDA54 /* Pods-MHPhotoBroswerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09A842871EE50741004615FD /* MHPhotoBroswerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09A842B51EE50741004615FD /* Build configuration list for PBXNativeTarget "MHPhotoBroswerDemo" */;
+			buildPhases = (
+				BA33B15E11267693F9EB1890 /* [CP] Check Pods Manifest.lock */,
+				09A842841EE50741004615FD /* Sources */,
+				09A842851EE50741004615FD /* Frameworks */,
+				09A842861EE50741004615FD /* Resources */,
+				593E7B38677A106EA61D5225 /* [CP] Embed Pods Frameworks */,
+				1CF9AE3F772264B712E2BDC0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MHPhotoBroswerDemo;
+			productName = MHPhotoBroswerDemo;
+			productReference = 09A842881EE50741004615FD /* MHPhotoBroswerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09A842A01EE50741004615FD /* MHPhotoBroswerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09A842B81EE50741004615FD /* Build configuration list for PBXNativeTarget "MHPhotoBroswerDemoTests" */;
+			buildPhases = (
+				09A8429D1EE50741004615FD /* Sources */,
+				09A8429E1EE50741004615FD /* Frameworks */,
+				09A8429F1EE50741004615FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09A842A31EE50741004615FD /* PBXTargetDependency */,
+			);
+			name = MHPhotoBroswerDemoTests;
+			productName = MHPhotoBroswerDemoTests;
+			productReference = 09A842A11EE50741004615FD /* MHPhotoBroswerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		09A842AB1EE50741004615FD /* MHPhotoBroswerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09A842BB1EE50741004615FD /* Build configuration list for PBXNativeTarget "MHPhotoBroswerDemoUITests" */;
+			buildPhases = (
+				09A842A81EE50741004615FD /* Sources */,
+				09A842A91EE50741004615FD /* Frameworks */,
+				09A842AA1EE50741004615FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09A842AE1EE50741004615FD /* PBXTargetDependency */,
+			);
+			name = MHPhotoBroswerDemoUITests;
+			productName = MHPhotoBroswerDemoUITests;
+			productReference = 09A842AC1EE50741004615FD /* MHPhotoBroswerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09A842801EE50741004615FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = J;
+				TargetAttributes = {
+					09A842871EE50741004615FD = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = ZN667QX87P;
+						ProvisioningStyle = Automatic;
+					};
+					09A842A01EE50741004615FD = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GLHBVKZG33;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 09A842871EE50741004615FD;
+					};
+					09A842AB1EE50741004615FD = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GLHBVKZG33;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 09A842871EE50741004615FD;
+					};
+				};
+			};
+			buildConfigurationList = 09A842831EE50741004615FD /* Build configuration list for PBXProject "MHPhotoBroswerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09A8427F1EE50741004615FD;
+			productRefGroup = 09A842891EE50741004615FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09A842871EE50741004615FD /* MHPhotoBroswerDemo */,
+				09A842A01EE50741004615FD /* MHPhotoBroswerDemoTests */,
+				09A842AB1EE50741004615FD /* MHPhotoBroswerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09A842861EE50741004615FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09DDA76F1EE5B076004FED65 /* 8.png in Resources */,
+				09A8429B1EE50741004615FD /* LaunchScreen.storyboard in Resources */,
+				09DDA76B1EE5B076004FED65 /* 4.png in Resources */,
+				09DDA7681EE5B076004FED65 /* 1.png in Resources */,
+				09DDA76D1EE5B076004FED65 /* 6.png in Resources */,
+				09DDA7691EE5B076004FED65 /* 2.png in Resources */,
+				09DDA76A1EE5B076004FED65 /* 3.png in Resources */,
+				09DDA76C1EE5B076004FED65 /* 5.png in Resources */,
+				09DDA76E1EE5B076004FED65 /* 7.png in Resources */,
+				09DDA7701EE5B076004FED65 /* 9.png in Resources */,
+				09A842981EE50741004615FD /* Assets.xcassets in Resources */,
+				09A842961EE50741004615FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09A8429F1EE50741004615FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09A842AA1EE50741004615FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CF9AE3F772264B712E2BDC0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHPhotoBroswerDemo/Pods-MHPhotoBroswerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		593E7B38677A106EA61D5225 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHPhotoBroswerDemo/Pods-MHPhotoBroswerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA33B15E11267693F9EB1890 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09A842841EE50741004615FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A842931EE50741004615FD /* ViewController.m in Sources */,
+				09A842901EE50741004615FD /* AppDelegate.m in Sources */,
+				09DDA7731EE5B0BB004FED65 /* PhotoCotentView.m in Sources */,
+				09A8428D1EE50741004615FD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09A8429D1EE50741004615FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A842A61EE50741004615FD /* MHPhotoBroswerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09A842A81EE50741004615FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A842B11EE50741004615FD /* MHPhotoBroswerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09A842A31EE50741004615FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09A842871EE50741004615FD /* MHPhotoBroswerDemo */;
+			targetProxy = 09A842A21EE50741004615FD /* PBXContainerItemProxy */;
+		};
+		09A842AE1EE50741004615FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09A842871EE50741004615FD /* MHPhotoBroswerDemo */;
+			targetProxy = 09A842AD1EE50741004615FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09A842941EE50741004615FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09A842951EE50741004615FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09A842991EE50741004615FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09A8429A1EE50741004615FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09A842B31EE50741004615FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09A842B41EE50741004615FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09A842B61EE50741004615FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 743E7B77D27703DEEA948C9F /* Pods-MHPhotoBroswerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZN667QX87P;
+				INFOPLIST_FILE = MHPhotoBroswerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.king.MHPhotoBroswerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09A842B71EE50741004615FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 617782B0EBCF39A55D2EDA54 /* Pods-MHPhotoBroswerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZN667QX87P;
+				INFOPLIST_FILE = MHPhotoBroswerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.king.MHPhotoBroswerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		09A842B91EE50741004615FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GLHBVKZG33;
+				INFOPLIST_FILE = MHPhotoBroswerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.king.MHPhotoBroswerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MHPhotoBroswerDemo.app/MHPhotoBroswerDemo";
+			};
+			name = Debug;
+		};
+		09A842BA1EE50741004615FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GLHBVKZG33;
+				INFOPLIST_FILE = MHPhotoBroswerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.king.MHPhotoBroswerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MHPhotoBroswerDemo.app/MHPhotoBroswerDemo";
+			};
+			name = Release;
+		};
+		09A842BC1EE50741004615FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GLHBVKZG33;
+				INFOPLIST_FILE = MHPhotoBroswerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.king.MHPhotoBroswerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MHPhotoBroswerDemo;
+			};
+			name = Debug;
+		};
+		09A842BD1EE50741004615FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GLHBVKZG33;
+				INFOPLIST_FILE = MHPhotoBroswerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.king.MHPhotoBroswerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MHPhotoBroswerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09A842831EE50741004615FD /* Build configuration list for PBXProject "MHPhotoBroswerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A842B31EE50741004615FD /* Debug */,
+				09A842B41EE50741004615FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09A842B51EE50741004615FD /* Build configuration list for PBXNativeTarget "MHPhotoBroswerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A842B61EE50741004615FD /* Debug */,
+				09A842B71EE50741004615FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09A842B81EE50741004615FD /* Build configuration list for PBXNativeTarget "MHPhotoBroswerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A842B91EE50741004615FD /* Debug */,
+				09A842BA1EE50741004615FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09A842BB1EE50741004615FD /* Build configuration list for PBXNativeTarget "MHPhotoBroswerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A842BC1EE50741004615FD /* Debug */,
+				09A842BD1EE50741004615FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09A842801EE50741004615FD /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module MHCoreSDWebImage {
+  umbrella header "MHCoreSDWebImage-umbrella.h"
+
+  export *
+  module * { export * }
+}

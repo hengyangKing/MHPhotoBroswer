@@ -1,0 +1,38 @@
+{
+  "name": "MHPhotoBroswer",
+  "version": "0.0.1",
+  "summary": "MHPhotoBroswer.",
+  "description": "PhotoBroswer for music home",
+  "homepage": "https://github.com/hengyangKing/MHPhotoBroswer",
+  "license": "MIT",
+  "authors": {
+    "hengyangKing": "hengyangKing.yeah.net"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/hengyangKing/MHPhotoBroswer.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "MHPhotoBroswer",
+    "MHPhotoBroswer/**/*.{h,m,xib}"
+  ],
+  "requires_arc": true,
+  "dependencies": {
+    "MHCoreSDWebImage": [
+
+    ],
+    "MHCoreSVP": [
+
+    ],
+    "KingBaseCategory": [
+
+    ],
+    "LFRoundProgressView": [
+
+    ]
+  },
+  "resources": "MHPhotoBroswer/Resource/PB.bundle"
+}

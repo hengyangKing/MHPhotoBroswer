@@ -1,0 +1,6 @@
+framework module MHCoreSVP {
+  umbrella header "MHCoreSVP-umbrella.h"
+
+  export *
+  module * { export * }
+}

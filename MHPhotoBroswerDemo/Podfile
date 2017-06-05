@@ -1,0 +1,10 @@
+platform :ios, '8.0'
+use_frameworks!
+#私有库
+source'https://git.coding.net/hengyang_King/MusicHomeSpecs.git'
+#公有库
+source'https://github.com/CocoaPods/Specs.git' 
+target 'MHPhotoBroswerDemo' do
+  pod 'MHPhotoBroswer', :path =>'../'
+
+end

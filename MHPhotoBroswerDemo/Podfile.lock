@@ -1,0 +1,75 @@
+PODS:
+  - KingBase (0.0.4):
+    - KingBase/MHTopWindow (= 0.0.4)
+  - KingBase/MHTopWindow (0.0.4)
+  - KingBaseCategory (0.3.2):
+    - KingBase
+    - KingBaseCategory/NSArray+ (= 0.3.2)
+    - KingBaseCategory/NSDate+ (= 0.3.2)
+    - KingBaseCategory/NSObject+ (= 0.3.2)
+    - KingBaseCategory/NSString+ (= 0.3.2)
+    - KingBaseCategory/UIButton+ (= 0.3.2)
+    - KingBaseCategory/UIColor+ (= 0.3.2)
+    - KingBaseCategory/UIFont+ (= 0.3.2)
+    - KingBaseCategory/UIImage+ (= 0.3.2)
+    - KingBaseCategory/UIImageView+ (= 0.3.2)
+    - KingBaseCategory/UIView+ (= 0.3.2)
+  - KingBaseCategory/NSArray+ (0.3.2):
+    - KingBase
+  - KingBaseCategory/NSDate+ (0.3.2):
+    - KingBase
+  - KingBaseCategory/NSObject+ (0.3.2):
+    - KingBase
+  - KingBaseCategory/NSString+ (0.3.2):
+    - KingBase
+  - KingBaseCategory/UIButton+ (0.3.2):
+    - KingBase
+  - KingBaseCategory/UIColor+ (0.3.2):
+    - KingBase
+  - KingBaseCategory/UIFont+ (0.3.2):
+    - KingBase
+    - KingBaseCategory/NSObject+
+  - KingBaseCategory/UIImage+ (0.3.2):
+    - KingBase
+  - KingBaseCategory/UIImageView+ (0.3.2):
+    - KingBase
+  - KingBaseCategory/UIView+ (0.3.2):
+    - KingBase
+  - LFRoundProgressView (1.0.0)
+  - MHCoreSDWebImage (0.0.5):
+    - KingBaseCategory/UIImage+
+    - SDWebImage (~> 3.8)
+  - MHCoreSVP (0.0.4):
+    - KingBaseCategory/UIFont+
+    - KingBaseCategory/UIImage+
+    - SVProgressHUD
+  - MHPhotoBroswer (0.0.1):
+    - KingBaseCategory
+    - LFRoundProgressView
+    - MHCoreSDWebImage
+    - MHCoreSVP
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - MHPhotoBroswer (from `../`)
+
+EXTERNAL SOURCES:
+  MHPhotoBroswer:
+    :path: ../
+
+SPEC CHECKSUMS:
+  KingBase: 798276a502bcc0678757d87559203dc8443b2bdd
+  KingBaseCategory: 4f8c9f25a0d1d8915ebe439cc991a8b65b261049
+  LFRoundProgressView: c4a404354fb9989ec4bc6ad2b3cde834f983d72b
+  MHCoreSDWebImage: 781a579d1c479e480a65248c5bd247677f4e3ea3
+  MHCoreSVP: 9a36a14cada998b7cfa7389d7bb2e200073ba220
+  MHPhotoBroswer: 2c2ec6e9692ab27575cb1635781dadb7b7833789
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+
+PODFILE CHECKSUM: c61cea703cd224d81351cc5d77ebee3437b50adb
+
+COCOAPODS: 1.1.1

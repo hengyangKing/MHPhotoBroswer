@@ -1,0 +1,6 @@
+framework module KingBaseCategory {
+  umbrella header "KingBaseCategory-umbrella.h"
+
+  export *
+  module * { export * }
+}
