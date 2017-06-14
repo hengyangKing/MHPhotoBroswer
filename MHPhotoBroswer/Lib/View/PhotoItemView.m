@@ -107,9 +107,8 @@
         
         //创建imageView
         
-        
 
-        UIImage *image=_photoModel.isWhiteBGColor?[UIImage whiteBGphImageWithSize:[UIScreen mainScreen].bounds.size zoom:.3f]:[UIImage blackBGphImageWithSize:[UIScreen mainScreen].bounds.size zoom:.3f];
+        UIImage *image=_photoModel.isWhiteBGColor?[UIImage whiteBGphImageWithSize:kScreenBounds.size zoom:.3f]:[UIImage blackBGphImageWithSize:kScreenBounds.size zoom:.3f];
         
         self.photoImageView.image = image;
         
@@ -424,6 +423,10 @@
  *  保存图片及回调
  */
 -(void)save:(void(^)())ItemImageSaveCompleteBlock failBlock:(void(^)())failBlock{
+    
+    
+    
+    
     
     if(self.photoImageView.image == nil){
         

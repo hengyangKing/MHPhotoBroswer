@@ -7,7 +7,7 @@
 //
 
 #import "PBSaveBtn.h"
-#import "UIImage+MHBundleImage.h"
+#import "MHPBBundleImage.h"
 @implementation PBSaveBtn
 
 
@@ -45,15 +45,10 @@
  */
 -(void)viewPrepare{
     
-//    [self setImage:[UIImage imageNamed:@"PB.bundle/preview_save_icon"] forState:UIControlStateNormal];
-//    [self setImage:[UIImage imageNamed:@"PB.bundle/preview_save_icon_highlighted"] forState:UIControlStateHighlighted];
-//    [self setImage:[UIImage imageNamed:@"PB.bundle/preview_save_icon_disable"] forState:UIControlStateDisabled];
+    [self setImage:[MHPBBundleImage getBundleImageWithName:@"preview_save_icon" andBundleName:@"PB"] forState:UIControlStateNormal];
     
-    [self setImage:[[self class] getBundleImageWithName:@"preview_save_icon"] forState:UIControlStateNormal];
+    [self setImage:[MHPBBundleImage getBundleImageWithName:@"preview_save_icon_highlighted" andBundleName:@"PB"] forState:UIControlStateHighlighted];
     
-    [self setImage:[[self class] getBundleImageWithName:@"preview_save_icon_highlighted"] forState:UIControlStateHighlighted];
-    
-    [self setImage:[[self class] getBundleImageWithName:@"preview_save_icon_disable"] forState:UIControlStateDisabled];
-    
+    [self setImage:[MHPBBundleImage getBundleImageWithName:@"preview_save_icon_disable" andBundleName:@"PB"] forState:UIControlStateDisabled];
 }
 @end

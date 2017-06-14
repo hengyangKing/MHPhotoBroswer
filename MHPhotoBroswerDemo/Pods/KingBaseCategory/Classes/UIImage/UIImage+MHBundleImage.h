@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (MHBundleImage)
-+(UIImage *)getBundleImageWithName:(NSString *)imageName;
++(UIImage *)getBundleImageWithName:(NSString *)imageName andBundleName:(NSString *)bundleName;
 @end

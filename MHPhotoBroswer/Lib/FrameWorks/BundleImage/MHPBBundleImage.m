@@ -1,15 +1,14 @@
 //
-//  UIImage+MHBundleImage.m
-//  MHPhotoBroswerDemo
+//  MHPBBundleImage.m
+//  Pods
 //
 //  Created by J on 2017/6/6.
-//  Copyright © 2017年 J. All rights reserved.
+//
 //
 
-#import "UIImage+MHBundleImage.h"
+#import "MHPBBundleImage.h"
 
-@implementation UIImage (MHBundleImage)
-
+@implementation MHPBBundleImage
 +(UIImage *)getBundleImageWithName:(NSString *)imageName andBundleName:(NSString *)bundleName
 {
     if (!bundleName.length) {
@@ -21,7 +20,7 @@
         return nil;
     }
     NSBundle *imageBundle = [NSBundle bundleWithURL:url];
-
+    
     return [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@.png",imageBundle.bundlePath,imageName]];
     
 }

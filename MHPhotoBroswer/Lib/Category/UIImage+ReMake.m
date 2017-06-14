@@ -7,8 +7,7 @@
 //
 
 #import "UIImage+ReMake.h"
-#import "UIImage+MHBundleImage.h"
-
+#import "MHPBBundleImage.h"
 @implementation UIImage (ReMake)
 
 -(UIImage *)remakeImageWithFullSize:(CGSize)fullSize zoom:(CGFloat)zoom{
@@ -34,20 +33,19 @@
     
     return newImage;
 }
-
-
 /*
  *  生成一个默认的占位图片：bundle默认图片
  */
-+(UIImage *)blackBGphImageWithSize:(CGSize)fullSize zoom:(CGFloat)zoom
-{
-    return [[UIImage getBundleImageWithName:@"empty_picture"] remakeImageWithFullSize:fullSize zoom:zoom];
++(UIImage *)blackBGphImageWithSize:(CGSize)fullSize zoom:(CGFloat)zoom{
+    
+    return [[MHPBBundleImage getBundleImageWithName:@"empty_picture" andBundleName:@"PBPlaceHolder"] remakeImageWithFullSize:fullSize zoom:zoom];
 }
 
 
 +(UIImage *)whiteBGphImageWithSize:(CGSize )fullSize zoom:(CGFloat )zoom
 {
-    return [[UIImage getBundleImageWithName:@"black_empty_picture"] remakeImageWithFullSize:fullSize zoom:zoom];
+    
+    return [[MHPBBundleImage getBundleImageWithName:@"black_empty_picture" andBundleName:@"PBPlaceHolder"] remakeImageWithFullSize:fullSize zoom:zoom];
 }
 
 

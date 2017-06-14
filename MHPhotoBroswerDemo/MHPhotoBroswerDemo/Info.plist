@@ -39,5 +39,7 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>&quot;相册权限&quot;</string>
 </dict>
 </plist>

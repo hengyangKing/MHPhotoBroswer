@@ -22,6 +22,7 @@ Pod::Spec.new do |s|
   s.dependency "LFRoundProgressView"
 
   s.resources = "MHPhotoBroswer/Resource/PB.bundle"
+  s.resources = "MHPhotoBroswer/Resource/PBPlaceHolder.bundle"
 
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"

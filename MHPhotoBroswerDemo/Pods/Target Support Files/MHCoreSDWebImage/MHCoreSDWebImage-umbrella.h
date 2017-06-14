@@ -4,7 +4,6 @@
 
 #import "UIButton+SD.h"
 #import "UIImageView+SD.h"
-#import "UIImage+ReMake.h"
 
 FOUNDATION_EXPORT double MHCoreSDWebImageVersionNumber;
 FOUNDATION_EXPORT const unsigned char MHCoreSDWebImageVersionString[];
