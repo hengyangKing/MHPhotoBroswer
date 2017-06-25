@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MHPhotoBroswer"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "a photoBroswer"
 
   # This description is used to generate tags and improve search results.
@@ -102,7 +102,9 @@ Pod::Spec.new do |s|
 
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
-  s.resources = "MHPhotoBroswer/Resource/PB.bundle"
+  # s.resources = "MHPhotoBroswer/Resource/PB.bundle"
+  s.resources = "MHPhotoBroswer/Resource/*.{bundle,xib}"
+
   #s.resources = "MHPhotoBroswer/Resource/PBPlaceHolder.bundle"
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

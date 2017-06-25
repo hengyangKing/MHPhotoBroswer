@@ -46,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0924DD801F004D5D006F0484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09A842881EE50741004615FD /* MHPhotoBroswerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHPhotoBroswerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A8428C1EE50741004615FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09A8428E1EE50741004615FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,12 +113,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0924DD7F1F004D5D006F0484 /* PBResource */ = {
+			isa = PBXGroup;
+			children = (
+				0924DD801F004D5D006F0484 /* Info.plist */,
+			);
+			path = PBResource;
+			sourceTree = "<group>";
+		};
 		09A8427F1EE50741004615FD = {
 			isa = PBXGroup;
 			children = (
 				09A8428A1EE50741004615FD /* MHPhotoBroswerDemo */,
 				09A842A41EE50741004615FD /* MHPhotoBroswerDemoTests */,
 				09A842AF1EE50741004615FD /* MHPhotoBroswerDemoUITests */,
+				0924DD7F1F004D5D006F0484 /* PBResource */,
 				09A842891EE50741004615FD /* Products */,
 				8A2A94FD3B4562287CE06BBE /* Pods */,
 				02CE96928CC593D3F82BF783 /* Frameworks */,

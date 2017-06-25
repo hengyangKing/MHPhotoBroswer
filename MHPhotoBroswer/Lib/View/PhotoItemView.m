@@ -66,7 +66,21 @@
 
 
 @implementation PhotoItemView
-
++(instancetype)photoItemView
+{
+    NSBundle *bundle = [NSBundle bundleForClass:self];
+    NSURL *url = [bundle URLForResource:@"PB" withExtension:@"bundle"];
+    if (!url) {
+        return nil;
+    }
+    
+    PhotoItemView *xibView=[[[NSBundle bundleWithURL:url] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] firstObject];
+    
+    if(xibView==nil){
+        NSLog(@"CoreXibView：从xib创建视图失败，当前类是：%@",NSStringFromClass(self));
+    }
+    return xibView;
+}
 
 -(void)awakeFromNib{
     

@@ -1,6 +1,6 @@
 {
   "name": "MHPhotoBroswer",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "summary": "a photoBroswer",
   "description": "a photoBroswer for music home",
   "homepage": "https://github.com/hengyangKing/MHPhotoBroswer",
@@ -13,13 +13,13 @@
   },
   "source": {
     "git": "https://github.com/hengyangKing/MHPhotoBroswer.git",
-    "tag": "0.0.2"
+    "tag": "0.0.6"
   },
   "source_files": [
     "MHPhotoBroswer",
-    "MHPhotoBroswer/**/*.{h,m,xib}"
+    "MHPhotoBroswer/**/*.{h,m}"
   ],
-  "resources": "MHPhotoBroswer/Resource/PB.bundle",
+  "resources": "MHPhotoBroswer/Resource/*.{bundle,xib}",
   "dependencies": {
     "MHCoreSDWebImage": [
 
@@ -31,6 +31,9 @@
 
     ],
     "LFRoundProgressView": [
+
+    ],
+    "KingBase": [
 
     ]
   }

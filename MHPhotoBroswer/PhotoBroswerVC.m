@@ -107,8 +107,18 @@
         return ;
     }
     
+    NSBundle *bundle =[NSBundle bundleWithURL:[[NSBundle bundleForClass:self] URLForResource:@"PB" withExtension:@"bundle"]];
+
+    NSError *error;
+    [bundle loadAndReturnError:&error];
     
-    PhotoBroswerVC *pbVC =  [[PhotoBroswerVC alloc] initWithNibName:@"PhotoBroswerVC" bundle:[NSBundle bundleForClass:self]];
+//    NSBundle *bundle = [NSBundle bundleForClass:self];
+
+    //    NSURL *url = [bundle URLForResource:@"PB" withExtension:@"bundle"];
+//    if (!url) {
+//        return ;
+//    }
+    PhotoBroswerVC *pbVC =  [[PhotoBroswerVC alloc] initWithNibName:@"PhotoBroswerVC" bundle:bundle];
 
     pbVC.isBlackColor=isBlackColor;
     if(index >= photoModels.count){
@@ -303,7 +313,7 @@
     
     if(!photoItemView ){//没有取到
         //重新创建
-        photoItemView = [PhotoItemView viewFromXIB];
+        photoItemView = [PhotoItemView photoItemView];
     }
     
     MHJLog(@"%p",&photoItemView);

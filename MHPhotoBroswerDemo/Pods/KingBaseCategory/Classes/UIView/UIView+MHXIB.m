@@ -13,7 +13,7 @@
  *  自动从xib创建视图
  */
 +(instancetype)viewFromXIB{
-    
+
     NSString *name=NSStringFromClass(self);
     UIView *xibView=[[[NSBundle bundleForClass:self] loadNibNamed:name owner:nil options:nil] firstObject];
     
