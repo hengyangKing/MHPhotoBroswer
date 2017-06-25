@@ -4,6 +4,7 @@ use_frameworks!
 source'https://git.coding.net/hengyang_King/MusicHomeSpecs.git'
 #公有库
 source'https://github.com/CocoaPods/Specs.git' 
+
 target 'MHPhotoBroswerDemo' do
   pod 'MHPhotoBroswer', :path =>'../'
 

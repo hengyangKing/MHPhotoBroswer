@@ -134,6 +134,6 @@ Pod::Spec.new do |s|
   s.dependency "MHCoreSVP"
   s.dependency "KingBaseCategory"
   s.dependency "LFRoundProgressView"
-  s.dependency "MHBase/MHTopWindow"
+  s.dependency "KingBase"
 
 end
