@@ -47,7 +47,6 @@
 
 @property(nonatomic,assign)BOOL isBlackBGColor;
 
-+(instancetype)photoItemView;
 /*
  *  处理bottomView
  */
