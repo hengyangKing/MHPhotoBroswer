@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MHPhotoBroswer"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "a photoBroswer"
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "MHPhotoBroswer", "MHPhotoBroswer/**/*.{h,m,xib}"
+  s.source_files  = "MHPhotoBroswer", "MHPhotoBroswer/**/*.{h,m}"
 
   
 
