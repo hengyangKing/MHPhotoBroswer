@@ -38,14 +38,14 @@
  */
 +(UIImage *)blackBGphImageWithSize:(CGSize)fullSize zoom:(CGFloat)zoom{
     
-    return [[MHPBBundleImage getBundleImageWithName:@"empty_picture" andBundleName:@"PBPlaceHolder"] remakeImageWithFullSize:fullSize zoom:zoom];
+    return [[MHPBBundleImage getBundleImageWithName:@"empty_picture" andBundleName:@"PB"] remakeImageWithFullSize:fullSize zoom:zoom];
 }
 
 
 +(UIImage *)whiteBGphImageWithSize:(CGSize )fullSize zoom:(CGFloat )zoom
 {
     
-    return [[MHPBBundleImage getBundleImageWithName:@"black_empty_picture" andBundleName:@"PBPlaceHolder"] remakeImageWithFullSize:fullSize zoom:zoom];
+    return [[MHPBBundleImage getBundleImageWithName:@"black_empty_picture" andBundleName:@"PB"] remakeImageWithFullSize:fullSize zoom:zoom];
 }
 
 

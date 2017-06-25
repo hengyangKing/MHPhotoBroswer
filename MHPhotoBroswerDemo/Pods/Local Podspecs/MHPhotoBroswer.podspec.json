@@ -1,8 +1,8 @@
 {
   "name": "MHPhotoBroswer",
-  "version": "0.0.1",
-  "summary": "MHPhotoBroswer.",
-  "description": "PhotoBroswer for music home",
+  "version": "0.0.2",
+  "summary": "a photoBroswer",
+  "description": "a photoBroswer for music home",
   "homepage": "https://github.com/hengyangKing/MHPhotoBroswer",
   "license": "MIT",
   "authors": {
@@ -13,13 +13,13 @@
   },
   "source": {
     "git": "https://github.com/hengyangKing/MHPhotoBroswer.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "source_files": [
     "MHPhotoBroswer",
     "MHPhotoBroswer/**/*.{h,m,xib}"
   ],
-  "requires_arc": true,
+  "resources": "MHPhotoBroswer/Resource/PB.bundle",
   "dependencies": {
     "MHCoreSDWebImage": [
 
@@ -33,6 +33,5 @@
     "LFRoundProgressView": [
 
     ]
-  },
-  "resources": "MHPhotoBroswer/Resource/PBPlaceHolder.bundle"
+  }
 }

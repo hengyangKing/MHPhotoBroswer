@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MHPhotoBroswer"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "a photoBroswer"
 
   # This description is used to generate tags and improve search results.
@@ -71,8 +71,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/hengyangKing/MHPhotoBroswer.git", :tag => "#{s.version}" }
-
+  s.source = { :git => "https://github.com/hengyangKing/MHPhotoBroswer.git", :tag => "#{s.version}" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -104,7 +103,7 @@ Pod::Spec.new do |s|
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
   s.resources = "MHPhotoBroswer/Resource/PB.bundle"
-  s.resources = "MHPhotoBroswer/Resource/PBPlaceHolder.bundle"
+  #s.resources = "MHPhotoBroswer/Resource/PBPlaceHolder.bundle"
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
