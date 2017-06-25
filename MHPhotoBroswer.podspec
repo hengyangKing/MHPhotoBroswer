@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MHPhotoBroswer"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "a photoBroswer"
 
   # This description is used to generate tags and improve search results.
@@ -134,6 +134,6 @@ Pod::Spec.new do |s|
   s.dependency "MHCoreSVP"
   s.dependency "KingBaseCategory"
   s.dependency "LFRoundProgressView"
-  s.dependency "MHBase"
+  s.dependency "MHBase/MHTopWindow"
 
 end
