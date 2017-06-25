@@ -424,10 +424,7 @@
  */
 -(void)save:(void(^)())ItemImageSaveCompleteBlock failBlock:(void(^)())failBlock{
     
-    
-    
-    
-    
+
     if(self.photoImageView.image == nil){
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
