@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MHPhotoBroswer"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "a photoBroswer"
 
   # This description is used to generate tags and improve search results.
