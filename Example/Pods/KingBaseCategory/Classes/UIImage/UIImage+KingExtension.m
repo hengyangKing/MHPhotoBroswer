@@ -9,27 +9,25 @@
 #import "UIImage+KingExtension.h"
 
 @implementation UIImage (KingExtension)
-+ (UIImage *)originImageWithName: (NSString *)name {
-    
-    return [[UIImage imageNamed:name] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
+- (UIImage *)originImage{
+
+    return [self imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+
 }
 
 /**
  拉伸图片
  */
-+ (UIImage *)stretchableImageWithName:(NSString *)name
-{
-    return [self stretchableImageWithName:name leftCap:0.5 topCap:0.5];
-
++ (UIImage *)stretchableImage: (UIImage *)image{
+    
+    return [self stretchableImage:image leftCap:0.5 topCap:0.5];
 }
 /**
  自定义比例拉伸图片
  
  */
-+(UIImage *)stretchableImageWithName:(NSString *)name leftCap:(CGFloat)leftCap topCap:(CGFloat)topCap
++(UIImage *)stretchableImage: (UIImage *)image leftCap:(CGFloat)leftCap topCap:(CGFloat)topCap
 {
-    UIImage *image = [self imageNamed:name];
     return [image stretchableImageWithLeftCapWidth:image.size.width * leftCap topCapHeight:image.size.height * topCap];
 }
 

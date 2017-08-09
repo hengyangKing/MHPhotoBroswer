@@ -9,25 +9,19 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (KingExtension)
-
-
 /**
  得到原图
  */
-+ (UIImage *)originImageWithName: (NSString *)name;
-
-
+- (UIImage *)originImage;
 /**
  拉伸图片
  */
-+ (UIImage *)stretchableImageWithName:(NSString *)name;
-
-
++ (UIImage *)stretchableImage: (UIImage *)image;
 /**
  自定义比例拉伸图片
  
  */
-+(UIImage *)stretchableImageWithName:(NSString *)name leftCap:(CGFloat)leftCap topCap:(CGFloat)topCap;
++(UIImage *)stretchableImage: (UIImage *)image leftCap:(CGFloat)leftCap topCap:(CGFloat)topCap;
 
 /**
  圆形图片

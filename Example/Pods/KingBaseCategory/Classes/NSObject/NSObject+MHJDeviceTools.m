@@ -8,7 +8,6 @@
 
 #import "NSObject+MHJDeviceTools.h"
 #import <AdSupport/AdSupport.h>
-#import "MHBase.h"
 @implementation NSObject (MHJDeviceTools)
 
 -(double)getSelfDevice
@@ -17,7 +16,8 @@
 }
 -(MHJDeviceType)getDeviceModel
 {
-    double h=kScreenHeight;
+
+    double h=[[UIScreen mainScreen] bounds].size.height;
     if (h==480){
         return iphone4and4s;
     }else if (h==568){

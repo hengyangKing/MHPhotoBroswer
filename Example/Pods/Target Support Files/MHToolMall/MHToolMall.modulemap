@@ -1,0 +1,6 @@
+framework module MHToolMall {
+  umbrella header "MHToolMall-umbrella.h"
+
+  export *
+  module * { export * }
+}

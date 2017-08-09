@@ -31,7 +31,6 @@
 /**
  *  是否为目标日期天前
  *  输入为空默认为15天
- *  @return
  */
 -(BOOL)isTargetAgo:(NSUInteger )dayAgo;
 
@@ -54,7 +53,7 @@
 /**
  得到修饰时间时间戳
  
- @param time createTime
+ @param postTime createTime
  @return MHJCreateTime
  */
 +(NSString *)getMHJCreateTimeWithCreateTime:(NSString *)postTime;

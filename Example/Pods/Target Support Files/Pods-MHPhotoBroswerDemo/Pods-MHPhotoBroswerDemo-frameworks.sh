@@ -90,6 +90,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/MHCoreSDWebImage/MHCoreSDWebImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MHCoreSVP/MHCoreSVP.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MHPhotoBroswer/MHPhotoBroswer.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MHToolMall/MHToolMall.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SVProgressHUD/SVProgressHUD.framework"
 fi
@@ -100,6 +101,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/MHCoreSDWebImage/MHCoreSDWebImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MHCoreSVP/MHCoreSVP.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MHPhotoBroswer/MHPhotoBroswer.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MHToolMall/MHToolMall.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SVProgressHUD/SVProgressHUD.framework"
 fi

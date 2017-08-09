@@ -19,7 +19,18 @@
 #define kScreenWidth [[UIScreen mainScreen] bounds].size.width
 #define kScreenHeight [[UIScreen mainScreen] bounds].size.height
 
+#define SELFSIZE [[UIScreen mainScreen] bounds].size
+
 // 弱引用
-#define kWeakSelf __weak typeof(self) weakSelf = self;
+#define MHWeakSelf __weak typeof(self) weakSelf = self;
+//通知中心
+#define JHYNAVCENTER [NSNotificationCenter defaultCenter]
+//[NSFileManager defaultManager]
+#define  JHYFILEMANAGER [NSFileManager defaultManager]
+//媒体文件大小
+#define MHMediaMaxSize 30.f
+
+
+
 
 #endif /* Base_h */
