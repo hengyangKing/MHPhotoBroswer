@@ -3,6 +3,7 @@
 #endif
 
 #import "PhotoBroswerVC.h"
+#import "PhotoBroswerAppearanceConfig.h"
 #import "CALayer+PBTransition.h"
 #import "UIImage+PBSavedPhotos.h"
 #import "UIImage+ReMake.h"
