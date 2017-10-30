@@ -90,8 +90,6 @@
     
     if(photoModel == nil) return;
     
-    self.bgView.backgroundColor = _photoModel.appearanceConfig.isBlackStyle?[UIColor blackColor]:[UIColor whiteColor];
-
     //数据准备
     [self dataPrepare];
 }
@@ -105,17 +103,18 @@
     
     BOOL isNetWorkShow = _photoModel.image == nil;
     
-    if(isNetWorkShow){
-        //网络请求
+    if(isNetWorkShow){//网络请求
+        
         //创建imageView
         
-        UIImage *image=self.photoModel.appearanceConfig.isBlackStyle?[UIImage blackBGphImageWithSize:kScreenBounds.size zoom:.3f]:[UIImage whiteBGphImageWithSize:kScreenBounds.size zoom:.3f];
+        
+        UIImage *image=_photoModel.isWhiteBGColor?[UIImage whiteBGphImageWithSize:kScreenBounds.size zoom:.3f]:[UIImage blackBGphImageWithSize:kScreenBounds.size zoom:.3f];
         
         self.photoImageView.image = image;
         
         if(image == nil) return;
         
-        [self.photoImageView imageWithUrlStr:_photoModel.image_HD_U phImage:self.photoModel.appearanceConfig.placeholderImage progressBlock:^(NSInteger receivedSize, NSInteger expectedSize) {
+        [self.photoImageView imageWithUrlStr:_photoModel.image_HD_U phImage:image progressBlock:^(NSInteger receivedSize, NSInteger expectedSize) {
             
             _progressView.hidden = NO;
             
@@ -138,13 +137,13 @@
         //标记
         self.hasImage = YES;
     }
-
+    
     self.scrollView.contentSize = self.photoImageView.frame.size;
-
+    
     
     self.photoImageView.frame = self.photoModel.sourceFrame;
     
-    if(self.photoModel.isFromSourceFrame && self.photoModel.appearanceConfig.showType == PhotoBroswerVCTypeZoom){
+    if(self.photoModel.isFromSourceFrame && self.type == PhotoBroswerVCTypeZoom){
         
         self.bgView.alpha = 0;
         
@@ -153,7 +152,8 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             [UIView animateWithDuration:timeInterval-.3f animations:^{
                 self.bgView.alpha = 1;
-                self.bgView.backgroundColor = self.photoModel.appearanceConfig.isBlackStyle?[UIColor blackColor]:[UIColor whiteColor];
+                self.bgView.backgroundColor=_photoModel.isWhiteBGColor?[UIColor whiteColor]:[UIColor blackColor];
+                
             }];
         });
         
@@ -167,20 +167,39 @@
         self.photoModel.isFromSourceFrame = NO;
         
     }else{
-       self.photoImageView.frame = self.photoImageView.calF; 
+        self.photoImageView.frame = self.photoImageView.calF;
     }
-    self.photoImageView.hidden=NO;
-
+    
+    
     //标题
     if (_photoModel.title.length==0&&_photoModel.desc.length==0) {
         _bottomView.hidden=YES;
-    }else{
+    }else
+    {
         _bottomView.hidden=NO;
         _titleLabel.text = _photoModel.title;
         _descLabel.text = _photoModel.desc;
         
     }
 }
+
+
+-(void)setIsBlackBGColor:(BOOL)isBlackBGColor
+{
+    _isBlackBGColor=isBlackBGColor;
+    if (_isBlackBGColor) {
+        
+        self.bgView.backgroundColor = [UIColor blackColor];
+        
+        
+    }else
+    {
+        self.bgView.backgroundColor = [UIColor whiteColor];
+    }
+    
+    
+}
+
 
 -(PhotoImageView *)photoImageView{
     
@@ -196,6 +215,13 @@
     return _photoImageView;
 }
 
+
+
+
+
+
+
+
 /*
  *  事件处理
  */
@@ -203,7 +229,7 @@
  *  view单击
  */
 -(void)tap_single_viewTap:(UITapGestureRecognizer *)tap{
-//    [self tap_view];
+    //    [self tap_view];
     [self needCloseView];
 }
 
@@ -211,7 +237,7 @@
  *  view双击
  */
 -(void)tap_double_viewTap:(UITapGestureRecognizer *)tap{
-//    [self tap_view];
+    //    [self tap_view];
     [self needCloseView];
 }
 
@@ -321,7 +347,7 @@
     if(scrollView.zoomScale <=1) scrollView.zoomScale = 1.0f;
     
     CGFloat xcenter = scrollView.center.x , ycenter = scrollView.center.y;
-
+    
     xcenter = scrollView.contentSize.width > scrollView.frame.size.width ? scrollView.contentSize.width/2 : xcenter;
     
     ycenter = scrollView.contentSize.height > scrollView.frame.size.height ? scrollView.contentSize.height/2 : ycenter;
@@ -387,7 +413,7 @@
 -(UILongPressGestureRecognizer *)long_viewGesture
 {
     if (!_long_viewGesture) {
-        _long_viewGesture=[[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(tap_long_imageViewTap:)];        
+        _long_viewGesture=[[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(tap_long_imageViewTap:)];
     }
     return _long_viewGesture;
 }
@@ -396,9 +422,9 @@
 /*
  *  保存图片及回调
  */
--(void)save:(void(^)(void))ItemImageSaveCompleteBlock failBlock:(void(^)(void))failBlock{
+-(void)save:(void(^)())ItemImageSaveCompleteBlock failBlock:(void(^)())failBlock{
     
-
+    
     if(self.photoImageView.image == nil){
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -406,7 +432,7 @@
         });
         return;
     }
-
+    
     [self.photoImageView.image savedPhotosAlbum:ItemImageSaveCompleteBlock failBlock:failBlock];
 }
 
@@ -444,7 +470,7 @@
 
 
 
--(void)zoomDismiss:(void(^)(void))compeletionBlock{
+-(void)zoomDismiss:(void(^)())compeletionBlock{
     
     //隐藏图片
     self.photoModel.sourceImageView.hidden = YES;
@@ -484,3 +510,4 @@
 
 
 @end
+

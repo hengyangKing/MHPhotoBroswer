@@ -10,7 +10,11 @@
 #import "PhotoModel.h"
 #import "PhotoImageView.h"
 #import "PhotoBroswerVC.h"
+
 @interface PhotoItemView : UIView
+
+
+
 
 /** 相册模型 */
 @property (nonatomic,strong) PhotoModel *photoModel;
@@ -37,6 +41,12 @@
 /** 展示照片的视图 */
 @property (nonatomic,strong) PhotoImageView *photoImageView;
 
+/** type */
+@property (nonatomic,assign) PhotoBroswerVCType type;
+
+
+@property(nonatomic,assign)BOOL isBlackBGColor;
+
 /*
  *  处理bottomView
  */
@@ -62,3 +72,4 @@
 
 
 @end
+

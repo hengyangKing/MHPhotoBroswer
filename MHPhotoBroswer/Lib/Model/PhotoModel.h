@@ -9,12 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import "PhotoBroswerAppearanceConfig.h"
+#import "PhotoBroswerType.h"
 
 @interface PhotoModel : NSObject
 
 /** mid，保存图片缓存唯一标识，必须传 */
 @property (nonatomic,assign) NSUInteger mid;
+
+
+
 
 /*
  *  网络图片
@@ -27,6 +30,9 @@
  *  本地图片
  */
 @property (nonatomic,strong) UIImage *image;
+
+//是否为黑色的背景！！！
+@property(nonatomic,assign)BOOL isWhiteBGColor;
 
 /** 标题 */
 @property (nonatomic,copy) NSString *title;
@@ -48,9 +54,6 @@
  *  检查数组合法性
  */
 +(NSString *)check:(NSArray *)photoModels type:(PhotoBroswerVCType)type;
-
-
-
 /**
  *  读取
  *
@@ -58,18 +61,9 @@
  */
 -(BOOL)read;
 
-
-
 /*
  *  保存
  */
 -(void)save;
-
-
-/** 外观设置 */
-@property (nonatomic,strong)PhotoBroswerAppearanceConfig *appearanceConfig;
-
-
-
 
 @end

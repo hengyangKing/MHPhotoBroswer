@@ -120,9 +120,6 @@
     
     pbVC.photoModels = photoModels;
     
-    for (PhotoModel *model in pbVC.photoModels) {
-        model.appearanceConfig = pbVC.appearanceConfig;
-    }
     //记录
     pbVC.handleVC = handleVC;
     //展示
@@ -309,10 +306,17 @@
     //传递数据
     //设置页标
     photoItemView.pageIndex = page;
+    photoItemView.type = self.appearanceConfig.showType;
     PhotoModel *photoModel=self.photoModels[page];
+    photoModel.isWhiteBGColor=!self.appearanceConfig.isBlackStyle;
     photoItemView.photoModel =photoModel;
+    photoItemView.isBlackBGColor=self.appearanceConfig.isBlackStyle;
+    
     [self.scrollView addSubview:photoItemView];
+    
+    //    [UIView animateWithDuration:.01 animations:^{
     photoItemView.alpha=1;
+    
 
 }
 
