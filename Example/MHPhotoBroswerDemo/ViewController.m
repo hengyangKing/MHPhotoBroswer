@@ -75,7 +75,9 @@
 -(void)localImageShow:(NSUInteger)index{
     
     __weak typeof(self) weakSelf=self;
-    [PhotoBroswerVC show:self type:(PhotoBroswerVCTypeModal) index:index photoModelBlock:^NSArray *{
+    [PhotoBroswerVC show:self andAppConfig:^(PhotoBroswerAppearanceConfig *config) {
+        config.PhotoBroswerStartIndex(index);
+    } photoModelBlock:^NSArray *{
         NSArray *localImages = weakSelf.images;
         
         NSMutableArray *modelsM = [NSMutableArray arrayWithCapacity:localImages.count];
@@ -96,7 +98,7 @@
         
         return modelsM;
         
-    } andBGColorIsBlackColor:YES];
+    }];
 }
 
 
@@ -108,8 +110,9 @@
     
     
     __weak typeof(self) weakSelf=self;
-    
-    [PhotoBroswerVC show:self type:PhotoBroswerVCTypeZoom index:index photoModelBlock:^NSArray *{
+   [PhotoBroswerVC show:self andAppConfig:^(PhotoBroswerAppearanceConfig *config) {
+        config.PhotoBroswerStartIndex(index);
+    } photoModelBlock:^NSArray *{
         
         
         NSArray *networkImages=@[
@@ -140,9 +143,8 @@
             
             [modelsM addObject:pbModel];
         }
-        
         return modelsM;
-    } andBGColorIsBlackColor:YES];
+    }];
 }
 
 @end

@@ -11,7 +11,7 @@
 @implementation PhotoBroswerAppearanceConfig
 +(instancetype)defaultAppearance{
     PhotoBroswerAppearanceConfig *config = [[PhotoBroswerAppearanceConfig alloc]init];
-    config.PhotoBroswerShowType(PhotoBroswerVCTypeModal).PhotoBroswerIsBlockStyle(YES);
+    config.PhotoBroswerShowType(PhotoBroswerVCTypeModal).PhotoBroswerIsBlockStyle(YES).PhotoBroswerStartIndex(0);
     
     UIImage *image=config.isBlackStyle?[UIImage blackBGphImageWithSize:kScreenBounds.size zoom:.3f]:[UIImage whiteBGphImageWithSize:kScreenBounds.size zoom:.3f];
     
@@ -31,6 +31,10 @@
 {
     _placeholderImage=placeholderImage;
 }
+-(void)setStartIndex:(NSUInteger)startIndex
+{
+    _startIndex=startIndex;
+}
 -(PhotoBroswerAppearanceConfig *(^)(BOOL))PhotoBroswerIsBlockStyle
 {
     return ^(BOOL isBlockStyle){
@@ -49,6 +53,13 @@
 {
     return ^(UIImage *image){
         self.placeholderImage=image;
+        return self;
+    };
+}
+-(PhotoBroswerAppearanceConfig *(^)(NSUInteger))PhotoBroswerStartIndex
+{
+    return ^(NSUInteger index){
+        self.startIndex=index;
         return self;
     };
 }

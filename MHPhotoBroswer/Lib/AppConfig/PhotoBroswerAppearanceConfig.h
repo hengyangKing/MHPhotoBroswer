@@ -18,10 +18,14 @@
 
 @property (nonatomic,strong,readonly) UIImage *placeholderImage;
 
+@property (nonatomic,assign,readonly) NSUInteger startIndex;
+
 @property (nonatomic,copy,readonly) PhotoBroswerAppearanceConfig * (^PhotoBroswerShowType)(PhotoBroswerVCType showType);
 
 @property (nonatomic,copy,readonly) PhotoBroswerAppearanceConfig * (^PhotoBroswerIsBlockStyle)(BOOL isBlockStyle);
 
 @property (nonatomic,copy,readonly)PhotoBroswerAppearanceConfig *(^PhotoBroswerPlaceholderImage)(UIImage *image);
+
+@property (nonatomic,copy,readonly)PhotoBroswerAppearanceConfig *(^PhotoBroswerStartIndex)(NSUInteger index);
 
 @end

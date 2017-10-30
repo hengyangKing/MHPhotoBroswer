@@ -87,7 +87,7 @@
 -(void)setPhotoModel:(PhotoModel *)photoModel{
     
     _photoModel = photoModel;
-    
+    self.bgView.backgroundColor = _photoModel.isBlackStyle?[UIColor blackColor]:[UIColor whiteColor];
     if(photoModel == nil) return;
     
     //数据准备
@@ -108,7 +108,7 @@
         //创建imageView
         
 
-        UIImage *image=_photoModel.isWhiteBGColor?[UIImage whiteBGphImageWithSize:kScreenBounds.size zoom:.3f]:[UIImage blackBGphImageWithSize:kScreenBounds.size zoom:.3f];
+        UIImage *image=_photoModel.isBlackStyle?[UIImage blackBGphImageWithSize:kScreenBounds.size zoom:.3f]:[UIImage whiteBGphImageWithSize:kScreenBounds.size zoom:.3f];
         
         self.photoImageView.image = image;
         
@@ -152,8 +152,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             [UIView animateWithDuration:timeInterval-.3f animations:^{
                 self.bgView.alpha = 1;
-                self.bgView.backgroundColor=_photoModel.isWhiteBGColor?[UIColor whiteColor]:[UIColor blackColor];
-                
+                self.bgView.backgroundColor=_photoModel.isBlackStyle?[UIColor blackColor]:[UIColor whiteColor];
             }];
         });
         
@@ -182,25 +181,6 @@
         
     }
 }
-
-
--(void)setIsBlackBGColor:(BOOL)isBlackBGColor
-{
-    _isBlackBGColor=isBlackBGColor;
-    if (_isBlackBGColor) {
-        
-        self.bgView.backgroundColor = [UIColor blackColor];
-
-        
-    }else
-    {
-        self.bgView.backgroundColor = [UIColor whiteColor];
-    }
-    
-    
-}
-
-
 -(PhotoImageView *)photoImageView{
     
     if(_photoImageView == nil){

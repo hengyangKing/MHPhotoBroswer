@@ -27,11 +27,6 @@
 /** 外部操作控制器 */
 @property (nonatomic,weak) UIViewController *handleVC;
 
-
-/** 类型 */
-@property (nonatomic,assign) PhotoBroswerVCType type;
-
-
 /** scrollView */
 @property (weak, nonatomic) IBOutlet PBScrollView *scrollView;
 
@@ -85,58 +80,55 @@
 /** 当前显示中的itemView */
 @property (nonatomic,weak) PhotoItemView *currentItemView;
 
-@property(nonatomic,assign)BOOL isBlackColor;
+@property(nonatomic,strong)PhotoBroswerAppearanceConfig *appConfig;
 @end
 
 @implementation PhotoBroswerVC
-
-
-+(void)show:(UIViewController *)handleVC type:(PhotoBroswerVCType)type index:(NSUInteger)index  photoModelBlock:(NSArray *(^)())photoModelBlock andBGColorIsBlackColor:(BOOL )isBlackColor{
++(void)show:(UIViewController *)handleVC andAppConfig:(void (^)(PhotoBroswerAppearanceConfig *config))appConfig photoModelBlock:(NSArray *(^)(void))photoModelBlock
+{
     
     [handleVC.view endEditing:YES];
-
+    
     //取出相册数组
     NSArray *photoModels = photoModelBlock();
     
     if(photoModels == nil || photoModels.count == 0) return ;
     
-    NSString *result= [PhotoModel check:photoModels type:type];
+    PhotoBroswerVC *pbVC =  [[PhotoBroswerVC alloc] initWithNibName:@"PhotoBroswerVC" bundle:[NSBundle bundleForClass:self]];
+    pbVC.appConfig = [PhotoBroswerAppearanceConfig defaultAppearance];
+    if (appConfig) {
+        appConfig(pbVC.appConfig);
+    }
+    
+    
+    NSString *result= [PhotoModel check:photoModels type:pbVC.appConfig.showType];
     
     if(result !=nil){
         MHJLog(@"%@",result);
         return ;
     }
-
-    PhotoBroswerVC *pbVC =  [[PhotoBroswerVC alloc] initWithNibName:@"PhotoBroswerVC" bundle:[NSBundle bundleForClass:self]];
-
-    pbVC.isBlackColor=isBlackColor;
-    if(index >= photoModels.count){
+    if(pbVC.appConfig.startIndex >= photoModels.count){
         MHJLog(@"错误：index越界！");
         return ;
     }
-    
     //记录
-    pbVC.index = index;
+    pbVC.index = pbVC.appConfig.startIndex;
     
     pbVC.photoModels = photoModels;
     
-    //记录
-    pbVC.type =type;
-    
     pbVC.handleVC = handleVC;
+    
     
     //展示
     [pbVC show];
     
 }
-
-
-
-
 /** 真正展示 */
 -(void)show{
     
-    switch (_type) {
+    self.view.backgroundColor = self.appConfig.isBlackStyle?[UIColor blackColor]:[UIColor whiteColor];
+    
+    switch (self.appConfig.showType) {
         case PhotoBroswerVCTypePush://push
             
             [self pushPhotoVC];
@@ -218,15 +210,6 @@
     } completion:^(BOOL finished) {
         photoModel.sourceImageView.hidden = NO;
     }];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.6f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        if (self.isBlackColor) {
-            self.view.backgroundColor = [UIColor blackColor];
-        }else
-        {
-            self.view.backgroundColor = [UIColor whiteColor];
-        }
-    });
 }
 
 
@@ -331,11 +314,10 @@
     //传递数据
     //设置页标
     photoItemView.pageIndex = page;
-    photoItemView.type = self.type;
+    photoItemView.type = self.appConfig.showType;
     PhotoModel *photoModel=self.photoModels[page];
-    photoModel.isWhiteBGColor=!self.isBlackColor;
+    photoModel.isBlackStyle=self.appConfig.isBlackStyle;
     photoItemView.photoModel =photoModel;
-    photoItemView.isBlackBGColor=self.isBlackColor;
     
     [self.scrollView addSubview:photoItemView];
     
@@ -635,7 +617,7 @@
 
 -(void)dismiss{
     
-    switch (_type) {
+    switch (self.appConfig.showType) {
         case PhotoBroswerVCTypePush://push
 
             [self.navigationController popViewControllerAnimated:YES];
