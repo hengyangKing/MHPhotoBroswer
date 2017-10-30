@@ -75,11 +75,10 @@
 -(void)localImageShow:(NSUInteger)index{
     
     __weak typeof(self) weakSelf=self;
-    
-    [PhotoBroswerVC show:self withAppearanceConfig:^(PhotoBroswerAppearanceConfig *config) {
-        config.PhotoBroswerPlaceholderImage([UIImage imageNamed:@"108_108"]);
-    } andPhotoModelBlock:^NSArray *{
-        
+
+    [PhotoBroswerVC show:self andAppConfig:^(PhotoBroswerAppearanceConfig *config) {
+        config.PhotoBroswerStartIndex(index);
+    } photoModelBlock:^NSArray *{
         NSArray *localImages = weakSelf.images;
         
         NSMutableArray *modelsM = [NSMutableArray arrayWithCapacity:localImages.count];
@@ -99,7 +98,6 @@
         }
         
         return modelsM;
-    
     }];
 }
 
@@ -109,12 +107,11 @@
  */
 -(void)networkImageShow:(NSUInteger)index{
     
-    
     __weak typeof(self) weakSelf=self;
-    [PhotoBroswerVC show:self withAppearanceConfig:^(PhotoBroswerAppearanceConfig *config) {
+   [PhotoBroswerVC show:self andAppConfig:^(PhotoBroswerAppearanceConfig *config) {
         config.PhotoBroswerStartIndex(index);
-        config.PhotoBroswerPlaceholderImage([UIImage imageNamed:@"108_108"]);
-    } andPhotoModelBlock:^NSArray *{
+    } photoModelBlock:^NSArray *{
+                
         NSArray *networkImages=@[
                                  @"http://img15.3lian.com/2015/h1/280/d/5.jpg",
                                  @"http://img15.3lian.com/2015/h1/280/d/5.jpg",
@@ -145,7 +142,6 @@
         }
         return modelsM;
     }];
-    
 }
 
 @end

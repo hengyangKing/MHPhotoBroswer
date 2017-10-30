@@ -32,7 +32,7 @@
 @property (nonatomic,strong) UIImage *image;
 
 //是否为黑色的背景！！！
-@property(nonatomic,assign)BOOL isWhiteBGColor;
+@property(nonatomic,assign)BOOL isBlackStyle;
 
 /** 标题 */
 @property (nonatomic,copy) NSString *title;
