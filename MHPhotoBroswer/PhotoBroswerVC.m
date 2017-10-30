@@ -305,24 +305,11 @@
     //设置页标
     photoItemView.pageIndex = page;
     PhotoModel *photoModel=self.photoModels[page];
-    photoItemView.photoModel =photoModel;
     photoItemView.appearanceConfig=self.appearanceConfig;
+    photoItemView.photoModel =photoModel;
     [self.scrollView addSubview:photoItemView];
-    
-    //    [UIView animateWithDuration:.01 animations:^{
     photoItemView.alpha=1;
-    //    }];
-    
-    //这里有一个奇怪的重影bug，必须这样解决
 
-//    photoItemView.hidden=YES;
-//    [UIView animateWithDuration:.01 animations:^{
-//        photoItemView.alpha=1;
-//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.001 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//            photoItemView.hidden=NO;
-//        });
-//    
-//    }];
 }
 
 
@@ -427,22 +414,12 @@
     }];
 }
 
-
-
-
-
-
 -(NSUInteger)pageCalWithScrollView:(UIScrollView *)scrollView{
     
     NSUInteger page = scrollView.contentOffset.x / scrollView.bounds.size.width + .5f;
     
     return page;
 }
-
-
-
-
-
 
 -(void)setPhotoModels:(NSArray *)photoModels{
     

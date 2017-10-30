@@ -77,7 +77,7 @@
     __weak typeof(self) weakSelf=self;
     
     [PhotoBroswerVC show:self withAppearanceConfig:^(PhotoBroswerAppearanceConfig *config) {
-        
+        config.PhotoBroswerPlaceholderImage([UIImage imageNamed:@"108_108"]);
     } andPhotoModelBlock:^NSArray *{
         
         NSArray *localImages = weakSelf.images;

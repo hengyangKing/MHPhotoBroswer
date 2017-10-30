@@ -12,8 +12,8 @@
 +(instancetype)defaultAppearance{
     PhotoBroswerAppearanceConfig *config = [[PhotoBroswerAppearanceConfig alloc]init];
     config.PhotoBroswerShowType(PhotoBroswerVCTypeModal).PhotoBroswerIsBlockStyle(YES).PhotoBroswerStartIndex(0);
-    
-    
+    UIImage *image=config.isBlackStyle?[UIImage blackBGphImageWithSize:kScreenBounds.size zoom:.3f]:[UIImage whiteBGphImageWithSize:kScreenBounds.size zoom:.3f];
+    config.PhotoBroswerPlaceholderImage(image);
 
     return config;
 }

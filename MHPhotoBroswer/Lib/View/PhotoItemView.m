@@ -106,11 +106,14 @@
     if(isNetWorkShow){
         //网络请求
         //创建imageView
-        self.photoImageView.image = (self.appearanceConfig.placeholderImage)?self.appearanceConfig.placeholderImage:(self.appearanceConfig.isBlackStyle?[UIImage blackBGphImageWithSize:kScreenBounds.size zoom:.3f]:[UIImage whiteBGphImageWithSize:kScreenBounds.size zoom:.3f]);
         
-        if(self.photoImageView == nil) return;
+        UIImage *image=self.appearanceConfig.isBlackStyle?[UIImage blackBGphImageWithSize:kScreenBounds.size zoom:.3f]:[UIImage whiteBGphImageWithSize:kScreenBounds.size zoom:.3f];
         
-        [self.photoImageView imageWithUrlStr:_photoModel.image_HD_U phImage:self.photoImageView.image progressBlock:^(NSInteger receivedSize, NSInteger expectedSize) {
+        self.photoImageView.image = image;
+        
+        if(image == nil) return;
+        
+        [self.photoImageView imageWithUrlStr:_photoModel.image_HD_U phImage:self.appearanceConfig.placeholderImage progressBlock:^(NSInteger receivedSize, NSInteger expectedSize) {
             
             _progressView.hidden = NO;
             
@@ -164,7 +167,7 @@
     }else{
        self.photoImageView.frame = self.photoImageView.calF; 
     }
-
+    self.photoImageView.hidden=NO;
 
     //标题
     if (_photoModel.title.length==0&&_photoModel.desc.length==0) {
