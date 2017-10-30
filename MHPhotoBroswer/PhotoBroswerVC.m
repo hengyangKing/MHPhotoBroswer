@@ -120,6 +120,9 @@
     
     pbVC.photoModels = photoModels;
     
+    for (PhotoModel *model in pbVC.photoModels) {
+        model.appearanceConfig = pbVC.appearanceConfig;
+    }
     //记录
     pbVC.handleVC = handleVC;
     //展示
@@ -258,6 +261,8 @@
     
     CGFloat widthEachPage = kScreenWidth + PBMargin;
 
+    
+    
     //展示页码对应的页面
     [self showWithPage:self.index];
     
@@ -305,7 +310,6 @@
     //设置页标
     photoItemView.pageIndex = page;
     PhotoModel *photoModel=self.photoModels[page];
-    photoItemView.appearanceConfig=self.appearanceConfig;
     photoItemView.photoModel =photoModel;
     [self.scrollView addSubview:photoItemView];
     photoItemView.alpha=1;

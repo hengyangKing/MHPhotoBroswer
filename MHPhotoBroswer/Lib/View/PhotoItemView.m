@@ -90,6 +90,8 @@
     
     if(photoModel == nil) return;
     
+    self.bgView.backgroundColor = _photoModel.appearanceConfig.isBlackStyle?[UIColor blackColor]:[UIColor whiteColor];
+
     //数据准备
     [self dataPrepare];
 }
@@ -107,13 +109,13 @@
         //网络请求
         //创建imageView
         
-        UIImage *image=self.appearanceConfig.isBlackStyle?[UIImage blackBGphImageWithSize:kScreenBounds.size zoom:.3f]:[UIImage whiteBGphImageWithSize:kScreenBounds.size zoom:.3f];
+        UIImage *image=self.photoModel.appearanceConfig.isBlackStyle?[UIImage blackBGphImageWithSize:kScreenBounds.size zoom:.3f]:[UIImage whiteBGphImageWithSize:kScreenBounds.size zoom:.3f];
         
         self.photoImageView.image = image;
         
         if(image == nil) return;
         
-        [self.photoImageView imageWithUrlStr:_photoModel.image_HD_U phImage:self.appearanceConfig.placeholderImage progressBlock:^(NSInteger receivedSize, NSInteger expectedSize) {
+        [self.photoImageView imageWithUrlStr:_photoModel.image_HD_U phImage:self.photoModel.appearanceConfig.placeholderImage progressBlock:^(NSInteger receivedSize, NSInteger expectedSize) {
             
             _progressView.hidden = NO;
             
@@ -142,7 +144,7 @@
     
     self.photoImageView.frame = self.photoModel.sourceFrame;
     
-    if(self.photoModel.isFromSourceFrame && self.appearanceConfig.showType == PhotoBroswerVCTypeZoom){
+    if(self.photoModel.isFromSourceFrame && self.photoModel.appearanceConfig.showType == PhotoBroswerVCTypeZoom){
         
         self.bgView.alpha = 0;
         
@@ -151,7 +153,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             [UIView animateWithDuration:timeInterval-.3f animations:^{
                 self.bgView.alpha = 1;
-                self.bgView.backgroundColor = self.appearanceConfig.isBlackStyle?[UIColor blackColor]:[UIColor whiteColor];
+                self.bgView.backgroundColor = self.photoModel.appearanceConfig.isBlackStyle?[UIColor blackColor]:[UIColor whiteColor];
             }];
         });
         
@@ -179,12 +181,6 @@
         
     }
 }
--(void)setAppearanceConfig:(PhotoBroswerAppearanceConfig *)appearanceConfig
-{
-    _appearanceConfig=appearanceConfig;
-    self.bgView.backgroundColor = _appearanceConfig.isBlackStyle?[UIColor blackColor]:[UIColor whiteColor];
-}
-
 
 -(PhotoImageView *)photoImageView{
     

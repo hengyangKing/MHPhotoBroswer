@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import "PhotoBroswerType.h"
+#import "PhotoBroswerAppearanceConfig.h"
 
 @interface PhotoModel : NSObject
 
@@ -65,6 +65,9 @@
  */
 -(void)save;
 
+
+/** 外观设置 */
+@property (nonatomic,strong)PhotoBroswerAppearanceConfig *appearanceConfig;
 
 
 

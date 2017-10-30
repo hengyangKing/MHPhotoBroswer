@@ -10,7 +10,6 @@
 #import "PhotoModel.h"
 #import "PhotoImageView.h"
 #import "PhotoBroswerVC.h"
-#import "PhotoBroswerAppearanceConfig.h"
 @interface PhotoItemView : UIView
 
 /** 相册模型 */
@@ -37,10 +36,6 @@
 
 /** 展示照片的视图 */
 @property (nonatomic,strong) PhotoImageView *photoImageView;
-
-
-/** 外观设置 */
-@property (nonatomic,strong)PhotoBroswerAppearanceConfig *appearanceConfig;
 
 /*
  *  处理bottomView
