@@ -14,9 +14,9 @@ static const void *FailBlockKey = &FailBlockKey;
 
 @interface UIImage ()
 
-@property (nonatomic,copy)  void(^CompleteBlock)();
+@property (nonatomic,copy)  void(^CompleteBlock)(void);
 
-@property (nonatomic,copy)  void(^FailBlock)();
+@property (nonatomic,copy)  void(^FailBlock)(void);
 
 @end
 
@@ -25,9 +25,9 @@ static const void *FailBlockKey = &FailBlockKey;
  *  保存相册
  *
  *  @param completeBlock 成功回调
- *  @param completeBlock 出错回调
+ *  @param failBlock 出错回调
  */
--(void)savedPhotosAlbum:(void(^)())completeBlock failBlock:(void(^)())failBlock{
+-(void)savedPhotosAlbum:(void(^)(void))completeBlock failBlock:(void(^)(void))failBlock{
     
     UIImageWriteToSavedPhotosAlbum(self, self, @selector(image:didFinishSavingWithError:contextInfo:),NULL);
     
@@ -50,17 +50,17 @@ static const void *FailBlockKey = &FailBlockKey;
 /*
  *  模拟成员变量
  */
--(void (^)())FailBlock{
+-(void (^)(void))FailBlock{
     return objc_getAssociatedObject(self, FailBlockKey);
 }
--(void)setFailBlock:(void (^)())FailBlock{
+-(void)setFailBlock:(void (^)(void))FailBlock{
     objc_setAssociatedObject(self, FailBlockKey, FailBlock, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
--(void (^)())CompleteBlock{
+-(void (^)(void))CompleteBlock{
     return objc_getAssociatedObject(self, CompleteBlockKey);
 }
 
--(void)setCompleteBlock:(void (^)())CompleteBlock{
+-(void)setCompleteBlock:(void (^)(void))CompleteBlock{
     objc_setAssociatedObject(self, CompleteBlockKey, CompleteBlock, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 

@@ -59,7 +59,7 @@
 //        [self localImageShow:index];
         
         //展示网络图片
-                [self networkImageShow:index];
+        [self networkImageShow:index];
     };
 }
 
@@ -75,7 +75,11 @@
 -(void)localImageShow:(NSUInteger)index{
     
     __weak typeof(self) weakSelf=self;
-    [PhotoBroswerVC show:self type:(PhotoBroswerVCTypeModal) index:index photoModelBlock:^NSArray *{
+    
+    [PhotoBroswerVC show:self withAppearanceConfig:^(PhotoBroswerAppearanceConfig *config) {
+        
+    } andPhotoModelBlock:^NSArray *{
+        
         NSArray *localImages = weakSelf.images;
         
         NSMutableArray *modelsM = [NSMutableArray arrayWithCapacity:localImages.count];
@@ -95,8 +99,8 @@
         }
         
         return modelsM;
-        
-    } andBGColorIsBlackColor:YES];
+    
+    }];
 }
 
 
@@ -107,10 +111,10 @@
     
     
     __weak typeof(self) weakSelf=self;
-    
-    [PhotoBroswerVC show:self type:PhotoBroswerVCTypeZoom index:index photoModelBlock:^NSArray *{
-        
-        
+    [PhotoBroswerVC show:self withAppearanceConfig:^(PhotoBroswerAppearanceConfig *config) {
+        config.PhotoBroswerStartIndex(index);
+        config.PhotoBroswerPlaceholderImage([UIImage imageNamed:@"108_108"]);
+    } andPhotoModelBlock:^NSArray *{
         NSArray *networkImages=@[
                                  @"http://img15.3lian.com/2015/h1/280/d/5.jpg",
                                  @"http://img15.3lian.com/2015/h1/280/d/5.jpg",
@@ -139,9 +143,9 @@
             
             [modelsM addObject:pbModel];
         }
-        
         return modelsM;
-    } andBGColorIsBlackColor:YES];
+    }];
+    
 }
 
 @end

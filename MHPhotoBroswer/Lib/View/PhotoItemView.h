@@ -10,11 +10,8 @@
 #import "PhotoModel.h"
 #import "PhotoImageView.h"
 #import "PhotoBroswerVC.h"
-
+#import "PhotoBroswerAppearanceConfig.h"
 @interface PhotoItemView : UIView
-
-
-
 
 /** 相册模型 */
 @property (nonatomic,strong) PhotoModel *photoModel;
@@ -23,9 +20,9 @@
 @property (nonatomic,assign) BOOL isScaleNormal;
 
 /** 单击 */
-@property (nonatomic,copy) void (^ItemViewSingleTapBlock)();
+@property (nonatomic,copy) void (^ItemViewSingleTapBlock)(void);
 
-@property (nonatomic,copy)void (^ItemViewWillCloceBlock)();
+@property (nonatomic,copy)void (^ItemViewWillCloceBlock)(void);
 
 
 /** 当前的页标 */
@@ -41,11 +38,9 @@
 /** 展示照片的视图 */
 @property (nonatomic,strong) PhotoImageView *photoImageView;
 
-/** type */
-@property (nonatomic,assign) PhotoBroswerVCType type;
 
-
-@property(nonatomic,assign)BOOL isBlackBGColor;
+/** 外观设置 */
+@property (nonatomic,strong)PhotoBroswerAppearanceConfig *appearanceConfig;
 
 /*
  *  处理bottomView
@@ -57,11 +52,11 @@
 /*
  *  保存图片及回调
  */
--(void)save:(void(^)())ItemImageSaveCompleteBlock failBlock:(void(^)())failBlock;
+-(void)save:(void(^)(void))ItemImageSaveCompleteBlock failBlock:(void(^)(void))failBlock;
 
 
 /** 缩回正常 */
--(void)zoomDismiss:(void(^)())compeletionBlock;
+-(void)zoomDismiss:(void(^)(void))compeletionBlock;
 
 
 

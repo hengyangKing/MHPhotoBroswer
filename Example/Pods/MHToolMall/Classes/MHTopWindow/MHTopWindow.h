@@ -13,7 +13,7 @@
 + (instancetype)sharedTopWindow;
 
 /** 点击状态栏的时候调用 */
-@property (nonatomic, copy) void (^clickStatusBarBlock)();
+@property (nonatomic, copy) void (^clickStatusBarBlock)(void);
 
 /** 状态栏的显示/隐藏 */
 @property (nonatomic, assign, getter=isStatusBarHidden) BOOL statusBarHidden;
