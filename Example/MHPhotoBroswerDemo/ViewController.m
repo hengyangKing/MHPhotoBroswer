@@ -106,6 +106,7 @@
 -(void)networkImageShow:(NSUInteger)index{
     
     
+    
     __weak typeof(self) weakSelf=self;
     
     [PhotoBroswerVC show:self type:PhotoBroswerVCTypeZoom index:index photoModelBlock:^NSArray *{
