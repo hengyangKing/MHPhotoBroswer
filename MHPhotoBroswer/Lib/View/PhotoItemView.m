@@ -16,6 +16,7 @@
 #import "UIImageView+SD.h"
 #import "MHBase.h"
 #import "UIImage+ReMake.h"
+#import "CoreSVP.h"
 
 @interface PhotoItemView ()<UIScrollViewDelegate>{
     CGFloat _zoomScale;
@@ -131,6 +132,14 @@
             
             if(image!=nil && _progressView.progress <1.0f) {
                 _progressView.progress = 1.0f;
+            }
+            if (error) {
+                _progressView.progress = 1.0f;
+                [CoreSVP showSVPWithType:CoreSVPTypeCenterMsg Msg:@"加载失败" duration:1.0f allowEdit:NO beginBlock:nil completeBlock:nil];
+            }else if (image){
+                self.photoImageView.frame = self.photoImageView.calF;
+                
+                self.scrollView.contentSize = self.photoImageView.frame.size;
             }
         }];
     }else{
