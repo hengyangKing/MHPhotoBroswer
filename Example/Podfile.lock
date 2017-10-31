@@ -30,7 +30,7 @@ PODS:
   - LFRoundProgressView (1.0.0)
   - MHCoreSDWebImage (0.0.8):
     - SDWebImage (~> 3.8)
-  - MHCoreSVP (0.0.7):
+  - MHCoreSVP (0.0.8):
     - KingBaseCategory/UIFont+
     - SVProgressHUD
   - MHPhotoBroswer (0.1.0):
@@ -58,7 +58,7 @@ SPEC CHECKSUMS:
   KingBaseCategory: dd0751fd5201bab2786feaf46a33c2a57fbfb3d5
   LFRoundProgressView: c4a404354fb9989ec4bc6ad2b3cde834f983d72b
   MHCoreSDWebImage: 534adff06da0f6bc0de29da1d642c599b810b255
-  MHCoreSVP: 4ed56b52083fc3891c1cfc8380d15005340838ff
+  MHCoreSVP: 79e4117d29eb2da2de7e440c82a81802950d2980
   MHPhotoBroswer: 8969a21a4b73500eace27eff816265770fb90234
   MHToolMall: 5389a1c513f7f6e144cb5c80e6e8a65a86b4c023
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
