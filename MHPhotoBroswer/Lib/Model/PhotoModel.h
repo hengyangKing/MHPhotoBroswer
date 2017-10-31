@@ -16,9 +16,6 @@
 /** mid，保存图片缓存唯一标识，必须传 */
 @property (nonatomic,assign) NSUInteger mid;
 
-
-
-
 /*
  *  网络图片
  */
@@ -49,6 +46,8 @@
 /** 是否从源frame放大呈现 */
 @property (nonatomic,assign) BOOL isFromSourceFrame;
 
+/** 网络请求placeholder image */
+@property (nonatomic,strong)UIImage *placeholderImage;
 
 /*
  *  检查数组合法性

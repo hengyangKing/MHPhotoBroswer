@@ -106,15 +106,17 @@
     if(isNetWorkShow){//网络请求
         
         //创建imageView
-        
-
-
-        UIImage *image=_photoModel.isBlackStyle?[UIImage blackBGphImageWithSize:kScreenBounds.size zoom:.3f]:[UIImage whiteBGphImageWithSize:kScreenBounds.size zoom:.3f];
-        
-        self.photoImageView.image = image;
-        
+        UIImage *image;
+        if (!self.photoModel.placeholderImage) {
+            image=_photoModel.isBlackStyle?[UIImage blackBGphImageWithSize:kScreenBounds.size zoom:.3f]:[UIImage whiteBGphImageWithSize:kScreenBounds.size zoom:.3f];
+            
+            self.photoImageView.image = image;
+            
+        }else{
+            image = self.photoModel.placeholderImage;
+        }
         if(image == nil) return;
-        
+
         [self.photoImageView imageWithUrlStr:_photoModel.image_HD_U phImage:image progressBlock:^(NSInteger receivedSize, NSInteger expectedSize) {
             
             _progressView.hidden = NO;

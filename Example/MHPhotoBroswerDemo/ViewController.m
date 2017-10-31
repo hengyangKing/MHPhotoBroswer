@@ -136,6 +136,7 @@
             
             //源frame
             UIImageView *imageV =(UIImageView *) weakSelf.contentView.subviews[i];
+            pbModel.placeholderImage = imageV.image;
             pbModel.sourceImageView = imageV;
             
             [modelsM addObject:pbModel];
