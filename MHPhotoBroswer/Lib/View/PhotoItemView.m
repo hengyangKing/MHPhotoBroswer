@@ -135,7 +135,6 @@
             }
             if (error) {
                 _progressView.progress = 1.0f;
-                [CoreSVP showSVPWithType:CoreSVPTypeCenterMsg Msg:@"加载失败" duration:1.0f allowEdit:NO beginBlock:nil completeBlock:nil];
             }else if (image){
                 self.photoImageView.frame = self.photoImageView.calF;
                 
