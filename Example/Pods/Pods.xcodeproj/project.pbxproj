@@ -13,8 +13,6 @@
 		03598D267CF4AB80783C2AFEFA8A22C7 /* Pods-MHPhotoBroswerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E42E36BFAF30FEC50C4712DE01D3CE4 /* Pods-MHPhotoBroswerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		045A01A44254EF07AAB7283EF6524B96 /* PhotoBroswerVC.h in Headers */ = {isa = PBXBuildFile; fileRef = BB82669A2F74889353CC95531D7A61E1 /* PhotoBroswerVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05A305FA7E81FED098194883CB4C428B /* MHTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 514517561A7A3086A10FC40EC050576A /* MHTopWindow.m */; };
-		0934CC371FA81290005913B4 /* PhotoBroswerAppearanceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7ACC9AB6B05D59642DBC25D798D3E1 /* PhotoBroswerAppearanceConfig.m */; };
-		0934CC381FA81290005913B4 /* PhotoBroswerAppearanceConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FEE652F7E5D0AA4B6647C62209D6713 /* PhotoBroswerAppearanceConfig.h */; };
 		096A203DA258A739B8DABF8F0CF9202E /* PBSaveBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC2B8B2E2B246D2655E150751014B64 /* PBSaveBtn.m */; };
 		0975476FF61F90F58BC7031BC87E564B /* NSFileManager+MHAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 0677F813E115580A9519FF54F00EF8F3 /* NSFileManager+MHAccount.m */; };
 		09B86818D71FE6EF6F819140FD695889 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E60E85A9BB31E05A1BFCE82134B3345 /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -495,7 +493,6 @@
 		8DCA546324150D377C6E31F97F622584 /* KingBaseCategory-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KingBaseCategory-prefix.pch"; sourceTree = "<group>"; };
 		8E816A64B6525FC7896FB2FF904EB007 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		8ED22E1A30C50115D692CF31B130B0FB /* KingBase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KingBase.modulemap; sourceTree = "<group>"; };
-		8FEE652F7E5D0AA4B6647C62209D6713 /* PhotoBroswerAppearanceConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PhotoBroswerAppearanceConfig.h; sourceTree = "<group>"; };
 		91C869270B9A0683ED92367C0059BEB5 /* PBPGView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PBPGView.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93EE7F82E2A0C635FC367D5718A8AF78 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
@@ -517,7 +514,6 @@
 		A98F7846D856AAE5116D81B9A09E6B06 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		A9DCFBA20521670E319DF91C19E96518 /* PhotoBroswerAppearanceConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PhotoBroswerAppearanceConfig.m; sourceTree = "<group>"; };
 		ACA685D533C77D168165AD22B49697CE /* PhotoBroswerLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PhotoBroswerLayout.h; sourceTree = "<group>"; };
-		AD7ACC9AB6B05D59642DBC25D798D3E1 /* PhotoBroswerAppearanceConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PhotoBroswerAppearanceConfig.m; sourceTree = "<group>"; };
 		ADE4BBADF524630C9ED956E10696CA65 /* MHPBBundleImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MHPBBundleImage.h; sourceTree = "<group>"; };
 		AF1589F7EF3CB5570C5EB46FE7338CAC /* UIImage+Cut.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Cut.h"; path = "Classes/UIImage/UIImage+Cut.h"; sourceTree = "<group>"; };
 		AF6F21003FE17E8853C1C57B7B0ECC3A /* NSString+Password.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Password.h"; path = "Classes/NSString/NSString+Password.h"; sourceTree = "<group>"; };
@@ -697,15 +693,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01725F8395F52DDA6D05F82DD818F490 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				8FEE652F7E5D0AA4B6647C62209D6713 /* PhotoBroswerAppearanceConfig.h */,
-				AD7ACC9AB6B05D59642DBC25D798D3E1 /* PhotoBroswerAppearanceConfig.m */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
 		04A353396C22ECBC4EF0F5FDBD18874C /* AppConfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -983,7 +970,6 @@
 			children = (
 				04A353396C22ECBC4EF0F5FDBD18874C /* AppConfig */,
 				E61F2FB4B2FC3BDC25F176590F2F890C /* Category */,
-				01725F8395F52DDA6D05F82DD818F490 /* Config */,
 				FF064698A739B64C09F5005891061FE9 /* Const */,
 				A7D193818083B795AE9BE73D8C46490E /* FrameWorks */,
 				94AB3A9E05C54B77E48AF7036ABA141B /* Layout */,
@@ -1458,7 +1444,6 @@
 				9478DFAC4752C7D7DAD4091782DE0814 /* PBPGView.h in Headers */,
 				569073D3C162A2E0C37FF88C676BBF3D /* PBSaveBtn.h in Headers */,
 				F935C80CA12544E5B1B1B4165DE9D2C0 /* PBScrollView.h in Headers */,
-				0934CC381FA81290005913B4 /* PhotoBroswerAppearanceConfig.h in Headers */,
 				E1D117C917A2D9F5E66745D280BE88FB /* PhotoBroswerLayout.h in Headers */,
 				FDAA40A818C79DC6D852F714E4CC9B81 /* PhotoBroswerType.h in Headers */,
 				045A01A44254EF07AAB7283EF6524B96 /* PhotoBroswerVC.h in Headers */,
@@ -1991,7 +1976,6 @@
 				CDEC5E0C2C83FC71D545D8DBF0C21968 /* PBPGView.m in Sources */,
 				096A203DA258A739B8DABF8F0CF9202E /* PBSaveBtn.m in Sources */,
 				332F769DE3ACFA959AEB414E47417A0D /* PBScrollView.m in Sources */,
-				0934CC371FA81290005913B4 /* PhotoBroswerAppearanceConfig.m in Sources */,
 				B317B739879D40B77E25C801228F162F /* PhotoBroswerLayout.m in Sources */,
 				21F1D368CF377AD828B12A5E8E5AF38D /* PhotoBroswerVC.m in Sources */,
 				E997D82EE9AE0F5626DC1055ED451AED /* PhotoImageView.m in Sources */,
