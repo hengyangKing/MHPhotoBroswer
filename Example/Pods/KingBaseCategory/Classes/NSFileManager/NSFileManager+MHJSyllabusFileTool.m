@@ -43,7 +43,7 @@
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
         if (error&&!dic) {
             return NO;
-            
+        
         }else{
             return YES;
         }

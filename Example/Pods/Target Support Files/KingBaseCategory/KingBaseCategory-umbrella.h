@@ -15,6 +15,7 @@
 #import "NSFileManager+MHReduceVideoPlistTools.h"
 #import "NSObject+MHJDeviceTools.h"
 #import "NSString+Password.h"
+#import "UIApplication+MHRootController.h"
 #import "UIButton+CountDown.h"
 #import "UIColor+Extend.h"
 #import "UIFont+MHJFont.h"
@@ -27,6 +28,7 @@
 #import "UIImageView+Extension.h"
 #import "UIImageView+MHJAddShadow.h"
 #import "UIView+KingLayoutFrame.h"
+#import "UIView+MHRootView.h"
 #import "UIView+MHXIB.h"
 
 FOUNDATION_EXPORT double KingBaseCategoryVersionNumber;

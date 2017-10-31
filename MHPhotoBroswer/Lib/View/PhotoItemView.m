@@ -403,7 +403,7 @@
 /*
  *  保存图片及回调
  */
--(void)save:(void(^)())ItemImageSaveCompleteBlock failBlock:(void(^)())failBlock{
+-(void)save:(void(^)(void))ItemImageSaveCompleteBlock failBlock:(void(^)(void))failBlock{
     
     
     if(self.photoImageView.image == nil){
@@ -451,7 +451,7 @@
 
 
 
--(void)zoomDismiss:(void(^)())compeletionBlock{
+-(void)zoomDismiss:(void(^)(void))compeletionBlock{
     
     //隐藏图片
     self.photoModel.sourceImageView.hidden = YES;

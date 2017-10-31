@@ -12,15 +12,15 @@
 /**
  *  检测正在录制视频文件大小
  */
--(BOOL)recordingVideoFileIsOverflow:(float (^)())maxsize;
+-(BOOL)recordingVideoFileIsOverflow:(float (^)(void))maxsize;
 
 /**
  *  检测正在录制音频文件大小
  */
--(BOOL)recordingAudioFileIsOverflow:(float (^)())maxsize;
+-(BOOL)recordingAudioFileIsOverflow:(float (^)(void))maxsize;
 /**
  *  检测转码后的文件大小
  */
--(BOOL)ReducedVideoIsIsOverflow:(float (^)())maxsize andFileName:(NSString *)fileName;
+-(BOOL)ReducedVideoIsIsOverflow:(float (^)(void))maxsize andFileName:(NSString *)fileName;
 
 @end

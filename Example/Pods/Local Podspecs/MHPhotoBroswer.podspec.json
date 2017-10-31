@@ -1,6 +1,6 @@
 {
   "name": "MHPhotoBroswer",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "summary": "a photoBroswer",
   "description": "a photoBroswer for music home",
   "homepage": "https://github.com/hengyangKing/MHPhotoBroswer",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/hengyangKing/MHPhotoBroswer.git",
-    "tag": "0.0.9"
+    "tag": "0.1.0"
   },
   "source_files": [
     "MHPhotoBroswer",

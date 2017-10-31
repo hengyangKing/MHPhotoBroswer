@@ -1,37 +1,39 @@
 PODS:
   - KingBase (0.0.5)
-  - KingBaseCategory (0.3.6):
-    - KingBaseCategory/NSArray+ (= 0.3.6)
-    - KingBaseCategory/NSDate+ (= 0.3.6)
-    - KingBaseCategory/NSFileManager+ (= 0.3.6)
-    - KingBaseCategory/NSObject+ (= 0.3.6)
-    - KingBaseCategory/NSString+ (= 0.3.6)
-    - KingBaseCategory/UIButton+ (= 0.3.6)
-    - KingBaseCategory/UIColor+ (= 0.3.6)
-    - KingBaseCategory/UIFont+ (= 0.3.6)
-    - KingBaseCategory/UIImage+ (= 0.3.6)
-    - KingBaseCategory/UIImageView+ (= 0.3.6)
-    - KingBaseCategory/UIView+ (= 0.3.6)
-  - KingBaseCategory/NSArray+ (0.3.6)
-  - KingBaseCategory/NSDate+ (0.3.6)
-  - KingBaseCategory/NSFileManager+ (0.3.6):
+  - KingBaseCategory (0.3.8):
+    - KingBaseCategory/NSArray+ (= 0.3.8)
+    - KingBaseCategory/NSDate+ (= 0.3.8)
+    - KingBaseCategory/NSFileManager+ (= 0.3.8)
+    - KingBaseCategory/NSObject+ (= 0.3.8)
+    - KingBaseCategory/NSString+ (= 0.3.8)
+    - KingBaseCategory/UIApplication+ (= 0.3.8)
+    - KingBaseCategory/UIButton+ (= 0.3.8)
+    - KingBaseCategory/UIColor+ (= 0.3.8)
+    - KingBaseCategory/UIFont+ (= 0.3.8)
+    - KingBaseCategory/UIImage+ (= 0.3.8)
+    - KingBaseCategory/UIImageView+ (= 0.3.8)
+    - KingBaseCategory/UIView+ (= 0.3.8)
+  - KingBaseCategory/NSArray+ (0.3.8)
+  - KingBaseCategory/NSDate+ (0.3.8)
+  - KingBaseCategory/NSFileManager+ (0.3.8):
     - KingBaseCategory/NSDate+
-  - KingBaseCategory/NSObject+ (0.3.6)
-  - KingBaseCategory/NSString+ (0.3.6)
-  - KingBaseCategory/UIButton+ (0.3.6)
-  - KingBaseCategory/UIColor+ (0.3.6)
-  - KingBaseCategory/UIFont+ (0.3.6):
+  - KingBaseCategory/NSObject+ (0.3.8)
+  - KingBaseCategory/NSString+ (0.3.8)
+  - KingBaseCategory/UIApplication+ (0.3.8)
+  - KingBaseCategory/UIButton+ (0.3.8)
+  - KingBaseCategory/UIColor+ (0.3.8)
+  - KingBaseCategory/UIFont+ (0.3.8):
     - KingBaseCategory/NSObject+
-  - KingBaseCategory/UIImage+ (0.3.6)
-  - KingBaseCategory/UIImageView+ (0.3.6)
-  - KingBaseCategory/UIView+ (0.3.6)
+  - KingBaseCategory/UIImage+ (0.3.8)
+  - KingBaseCategory/UIImageView+ (0.3.8)
+  - KingBaseCategory/UIView+ (0.3.8)
   - LFRoundProgressView (1.0.0)
   - MHCoreSDWebImage (0.0.8):
     - SDWebImage (~> 3.8)
   - MHCoreSVP (0.0.7):
     - KingBaseCategory/UIFont+
     - SVProgressHUD
-  - MHPhotoBroswer (0.0.9):
+  - MHPhotoBroswer (0.1.0):
     - KingBase (~> 0.0.5)
     - KingBaseCategory
     - LFRoundProgressView
@@ -53,11 +55,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   KingBase: d228101663cf91943fa2af0caf1f7ce31502aee9
-  KingBaseCategory: 740be21ede05872861c019979f0854ffac5cae8c
+  KingBaseCategory: dd0751fd5201bab2786feaf46a33c2a57fbfb3d5
   LFRoundProgressView: c4a404354fb9989ec4bc6ad2b3cde834f983d72b
   MHCoreSDWebImage: 534adff06da0f6bc0de29da1d642c599b810b255
   MHCoreSVP: 4ed56b52083fc3891c1cfc8380d15005340838ff
-  MHPhotoBroswer: ede9415548881ed5c5787ac0a85911950c189d73
+  MHPhotoBroswer: 8969a21a4b73500eace27eff816265770fb90234
   MHToolMall: 3cf8d8f2c3b4fc844beef3b8461510515abc084f
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
