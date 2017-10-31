@@ -40,7 +40,7 @@ PODS:
     - MHCoreSDWebImage
     - MHCoreSVP
     - MHToolMall/MHTopWindow
-  - MHToolMall/MHTopWindow (0.0.1)
+  - MHToolMall/MHTopWindow (0.0.2)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -60,7 +60,7 @@ SPEC CHECKSUMS:
   MHCoreSDWebImage: 534adff06da0f6bc0de29da1d642c599b810b255
   MHCoreSVP: 4ed56b52083fc3891c1cfc8380d15005340838ff
   MHPhotoBroswer: 8969a21a4b73500eace27eff816265770fb90234
-  MHToolMall: 3cf8d8f2c3b4fc844beef3b8461510515abc084f
+  MHToolMall: 5389a1c513f7f6e144cb5c80e6e8a65a86b4c023
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 

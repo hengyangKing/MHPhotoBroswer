@@ -8,7 +8,6 @@
 #import "UIImage+PBSavedPhotos.h"
 #import "UIImage+ReMake.h"
 #import "UIView+PBExtend.h"
-#import "PhotoBroswerAppearanceConfig.h"
 #import "PBConst.h"
 #import "MHPBBundleImage.h"
 #import "NSString+File.h"

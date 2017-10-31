@@ -113,7 +113,7 @@ static MHTopWindow *_instance = nil;
     [super setBackgroundColor:[UIColor clearColor]];
 }
 
-- (void)setClickStatusBarBlock:(void (^)())clickStatusBarBlock {
+- (void)setClickStatusBarBlock:(void (^)(void))clickStatusBarBlock {
     _clickStatusBarBlock = clickStatusBarBlock;
     _instance.hidden = NO;
 }

@@ -22,7 +22,7 @@
  *  @param beginBlock    提示开始时的回调
  *  @param completeBlock 提示结束时的回调
  */
-+(void)showSVPWithType:(CoreSVPType)type Msg:(NSString *)msg duration:(CGFloat)duration allowEdit:(BOOL)allowEdit beginBlock:(void(^)())beginBlock completeBlock:(void(^)())completeBlock{
++(void)showSVPWithType:(CoreSVPType)type Msg:(NSString *)msg duration:(CGFloat)duration allowEdit:(BOOL)allowEdit beginBlock:(void(^)(void))beginBlock completeBlock:(void(^)(void))completeBlock{
     
 
 //    dispatch_async(dispatch_get_main_queue(), ^{

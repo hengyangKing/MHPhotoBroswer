@@ -11,6 +11,6 @@
 @interface MHCoreSVP : NSObject
 +(void)hideMHHUD;
 +(void)showMHHUD;
-+(void)showMHMsg:(NSString *)msg andCompleteBlock:(void(^)())completeBlock;
++(void)showMHMsg:(NSString *)msg andCompleteBlock:(void(^)(void))completeBlock;
 
 @end

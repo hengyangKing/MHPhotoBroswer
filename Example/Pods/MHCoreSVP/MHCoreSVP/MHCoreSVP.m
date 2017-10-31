@@ -24,7 +24,7 @@
         [SVProgressHUD show];
     });
 }
-+(void)showMHMsg:(NSString *)msg andCompleteBlock:(void(^)())completeBlock
++(void)showMHMsg:(NSString *)msg andCompleteBlock:(void(^)(void))completeBlock
 {
     [CoreSVP showSVPWithType:(CoreSVPTypeCenterMsg) Msg:msg duration:1.5 allowEdit:NO beginBlock:nil completeBlock:completeBlock];
 }
