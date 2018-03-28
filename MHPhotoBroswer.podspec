@@ -136,7 +136,6 @@ Pod::Spec.new do |s|
   s.dependency "MHCoreSVP"
   s.dependency "KingBaseCategory"
   s.dependency "LFRoundProgressView"
-  # s.dependency "KingBase", "~> 0.0.5"
   s.dependency "MHBaseConst"
   s.dependency "MHToolMall/MHTopWindow"
 
