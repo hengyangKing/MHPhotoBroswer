@@ -1,0 +1,6 @@
+framework module MHBaseConst {
+  umbrella header "MHBaseConst-umbrella.h"
+
+  export *
+  module * { export * }
+}

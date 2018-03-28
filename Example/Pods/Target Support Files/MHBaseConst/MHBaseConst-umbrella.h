@@ -10,8 +10,10 @@
 #endif
 #endif
 
-#import "LFRoundProgressView.h"
+#import "MHBase.h"
+#import "MHConst.h"
+#import "MHSington.h"
 
-FOUNDATION_EXPORT double LFRoundProgressViewVersionNumber;
-FOUNDATION_EXPORT const unsigned char LFRoundProgressViewVersionString[];
+FOUNDATION_EXPORT double MHBaseConstVersionNumber;
+FOUNDATION_EXPORT const unsigned char MHBaseConstVersionString[];
 

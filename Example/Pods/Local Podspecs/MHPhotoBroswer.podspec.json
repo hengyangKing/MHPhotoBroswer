@@ -1,6 +1,6 @@
 {
   "name": "MHPhotoBroswer",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "summary": "a photoBroswer",
   "description": "a photoBroswer for music home",
   "homepage": "https://github.com/hengyangKing/MHPhotoBroswer",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/hengyangKing/MHPhotoBroswer.git",
-    "tag": "0.1.0"
+    "tag": "0.1.3"
   },
   "source_files": [
     "MHPhotoBroswer",
@@ -33,8 +33,8 @@
     "LFRoundProgressView": [
 
     ],
-    "KingBase": [
-      "~> 0.0.5"
+    "MHBaseConst": [
+
     ],
     "MHToolMall/MHTopWindow": [
 
